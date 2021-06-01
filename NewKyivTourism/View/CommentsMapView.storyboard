@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pyp-Ij-xWX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Comments Map Controller-->
+        <scene sceneID="8Ku-di-1uv">
+            <objects>
+                <viewController storyboardIdentifier="CommentsMapView" id="Pyp-Ij-xWX" customClass="CommentsMapController" customModule="KyivTourismApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t1K-O9-DaK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hH4-LT-WDk" customClass="MKMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIq-rO-Qam">
+                                <rect key="frame" x="20" y="95" width="71" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-vf-Vp0">
+                                <rect key="frame" x="20" y="762" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAq-Y8-Mzc">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Comments"/>
+                                        <connections>
+                                            <action selector="showComments:" destination="Pyp-Ij-xWX" eventType="touchUpInside" id="A4J-qg-gpx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meJ-Qj-Fl5">
+                                        <rect key="frame" x="192" y="0.0" width="182" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Start Route">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRoute:" destination="Pyp-Ij-xWX" eventType="touchUpInside" id="TVi-2n-4Gu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jAq-Y8-Mzc" secondAttribute="bottom" id="6Nc-wG-7gh"/>
+                                    <constraint firstItem="meJ-Qj-Fl5" firstAttribute="top" secondItem="RcX-vf-Vp0" secondAttribute="top" id="OVR-h9-XiQ"/>
+                                    <constraint firstItem="jAq-Y8-Mzc" firstAttribute="top" secondItem="RcX-vf-Vp0" secondAttribute="top" id="cmc-lH-JIc"/>
+                                    <constraint firstAttribute="bottom" secondItem="meJ-Qj-Fl5" secondAttribute="bottom" id="hje-2D-4NA"/>
+                                    <constraint firstAttribute="height" constant="50" id="zf4-xq-igI"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="we6-oc-0wO">
+                                <rect key="frame" x="20" y="54" width="374" height="32"/>
+                                <segments>
+                                    <segment title="" image="figure.walk" catalog="system"/>
+                                    <segment title="" image="car" catalog="system"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="linkColor"/>
+                                <connections>
+                                    <action selector="changeDirection:" destination="Pyp-Ij-xWX" eventType="valueChanged" id="xuT-9U-FDe"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XoU-U7-v7m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XoU-U7-v7m" firstAttribute="trailing" secondItem="hH4-LT-WDk" secondAttribute="trailing" id="0ts-Uv-9YP"/>
+                            <constraint firstItem="XoU-U7-v7m" firstAttribute="bottom" secondItem="RcX-vf-Vp0" secondAttribute="bottom" constant="50" id="84s-HI-dVK"/>
+                            <constraint firstItem="we6-oc-0wO" firstAttribute="top" secondItem="XoU-U7-v7m" secondAttribute="top" constant="10" id="Bvh-AI-3SW"/>
+                            <constraint firstItem="RcX-vf-Vp0" firstAttribute="leading" secondItem="XoU-U7-v7m" secondAttribute="leading" constant="20" id="VXH-79-jig"/>
+                            <constraint firstItem="we6-oc-0wO" firstAttribute="leading" secondItem="XoU-U7-v7m" secondAttribute="leading" constant="20" id="ae7-FS-hYh"/>
+                            <constraint firstItem="hH4-LT-WDk" firstAttribute="leading" secondItem="XoU-U7-v7m" secondAttribute="leading" id="dur-rx-myk"/>
+                            <constraint firstItem="bIq-rO-Qam" firstAttribute="top" secondItem="we6-oc-0wO" secondAttribute="bottom" constant="10" id="fWm-k7-0Sg"/>
+                            <constraint firstItem="XoU-U7-v7m" firstAttribute="trailing" secondItem="RcX-vf-Vp0" secondAttribute="trailing" constant="20" id="fX8-aG-IZv"/>
+                            <constraint firstItem="hH4-LT-WDk" firstAttribute="top" secondItem="XoU-U7-v7m" secondAttribute="top" id="fxT-SE-MxF"/>
+                            <constraint firstItem="XoU-U7-v7m" firstAttribute="trailing" secondItem="we6-oc-0wO" secondAttribute="trailing" constant="20" id="luH-ct-bTt"/>
+                            <constraint firstItem="XoU-U7-v7m" firstAttribute="bottom" secondItem="hH4-LT-WDk" secondAttribute="bottom" id="rKg-qO-Aja"/>
+                            <constraint firstItem="bIq-rO-Qam" firstAttribute="leading" secondItem="XoU-U7-v7m" secondAttribute="leading" constant="20" id="uvn-xS-Glx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="luD-2N-2US"/>
+                    <connections>
+                        <outlet property="commentButton" destination="jAq-Y8-Mzc" id="N9s-nY-z27"/>
+                        <outlet property="mapView" destination="hH4-LT-WDk" id="YxZ-AY-zh3"/>
+                        <outlet property="startButton" destination="meJ-Qj-Fl5" id="Xxu-xV-Hei"/>
+                        <outlet property="timeLabel" destination="bIq-rO-Qam" id="v8c-Fg-Ik7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSC-QW-br2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4228" y="-1306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" catalog="system" width="128" height="93"/>
+        <image name="figure.walk" catalog="system" width="95" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

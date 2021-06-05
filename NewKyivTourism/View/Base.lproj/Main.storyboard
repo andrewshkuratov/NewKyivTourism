@@ -323,6 +323,10 @@
                             <outlet property="delegate" destination="ebX-Yh-g8h" id="HEL-h6-pVx"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="5ll-cc-krm" kind="custom" identifier="userNotLoggedIn" customClass="SWRevealViewControllerSeguePushController" id="Nr0-Uh-b2q"/>
+                        <segue destination="mk9-zX-vCK" kind="custom" identifier="userLoggedIn" customClass="SWRevealViewControllerSeguePushController" id="OGR-Ff-kxt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9Z-lU-3Wi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,6 +339,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGp-9u-fO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1556" y="-890"/>
+        </scene>
+        <!--ProfilePageView-->
+        <scene sceneID="2jf-hY-UJm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfilePageView" id="mk9-zX-vCK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7S-RP-wjC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-751"/>
+        </scene>
+        <!--RegistrationPageView-->
+        <scene sceneID="nKO-Ek-BMZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegistrationPageView" id="5ll-cc-krm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqw-ZD-1SZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-824"/>
         </scene>
         <!--Global Search Controller-->
         <scene sceneID="gBC-zJ-Ehi">

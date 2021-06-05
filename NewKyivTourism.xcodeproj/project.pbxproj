@@ -24,7 +24,6 @@
 		491B05E72667988E00ACB2DF /* LocationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B05E62667988E00ACB2DF /* LocationDetailController.swift */; };
 		491B05E9266798DC00ACB2DF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B05E8266798DC00ACB2DF /* StringExtension.swift */; };
 		491B05EB2667A23700ACB2DF /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B05EA2667A23700ACB2DF /* LikeButton.swift */; };
-		492194CC266552F900485BCA /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194CB266552F900485BCA /* RegistrationForm.swift */; };
 		492194CE266554D900485BCA /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194CD266554D900485BCA /* ViewExtensions.swift */; };
 		492194D0266556B100485BCA /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194CF266556B100485BCA /* SpinnerViewController.swift */; };
 		492194D22665590A00485BCA /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194D12665590A00485BCA /* MenuTableViewController.swift */; };
@@ -76,6 +75,10 @@
 		49E431A72668B3D900ED86ED /* NoCommentsMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E431A62668B3D900ED86ED /* NoCommentsMapView.storyboard */; };
 		49E431A92668B7A100ED86ED /* PosterDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E431A82668B7A100ED86ED /* PosterDetailView.storyboard */; };
 		49E431AB2668B83B00ED86ED /* PosterDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E431AA2668B83B00ED86ED /* PosterDetailController.swift */; };
+		49E5E207266B46B6009857E9 /* RegistrationPageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E5E206266B46B6009857E9 /* RegistrationPageView.storyboard */; };
+		49E5E209266B46D0009857E9 /* ProfilePageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E5E208266B46D0009857E9 /* ProfilePageView.storyboard */; };
+		49E5E20B266B57BD009857E9 /* AuthorizationPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5E20A266B57BD009857E9 /* AuthorizationPageController.swift */; };
+		49E5E20F266B5BA4009857E9 /* RegistrationPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5E20E266B5BA4009857E9 /* RegistrationPageController.swift */; };
 		C3A305D835A19358210F66F3 /* Pods_NewKyivTourism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C84335B2956596108CCC949 /* Pods_NewKyivTourism.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,7 +102,6 @@
 		491B05E62667988E00ACB2DF /* LocationDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailController.swift; sourceTree = "<group>"; };
 		491B05E8266798DC00ACB2DF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		491B05EA2667A23700ACB2DF /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
-		492194CB266552F900485BCA /* RegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationForm.swift; sourceTree = "<group>"; };
 		492194CD266554D900485BCA /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		492194CF266556B100485BCA /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		492194D12665590A00485BCA /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,10 @@
 		49E431A62668B3D900ED86ED /* NoCommentsMapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoCommentsMapView.storyboard; sourceTree = "<group>"; };
 		49E431A82668B7A100ED86ED /* PosterDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PosterDetailView.storyboard; sourceTree = "<group>"; };
 		49E431AA2668B83B00ED86ED /* PosterDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterDetailController.swift; sourceTree = "<group>"; };
+		49E5E206266B46B6009857E9 /* RegistrationPageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationPageView.storyboard; sourceTree = "<group>"; };
+		49E5E208266B46D0009857E9 /* ProfilePageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePageView.storyboard; sourceTree = "<group>"; };
+		49E5E20A266B57BD009857E9 /* AuthorizationPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPageController.swift; sourceTree = "<group>"; };
+		49E5E20E266B5BA4009857E9 /* RegistrationPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageController.swift; sourceTree = "<group>"; };
 		9C84335B2956596108CCC949 /* Pods_NewKyivTourism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewKyivTourism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -255,6 +261,8 @@
 				49E431A62668B3D900ED86ED /* NoCommentsMapView.storyboard */,
 				49E431A82668B7A100ED86ED /* PosterDetailView.storyboard */,
 				490107052668EA330068E7BF /* RoutesPageView.storyboard */,
+				49E5E206266B46B6009857E9 /* RegistrationPageView.storyboard */,
+				49E5E208266B46D0009857E9 /* ProfilePageView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				498E82F82663B9E800EDD5F3 /* MainPage.swift */,
-				492194CB266552F900485BCA /* RegistrationForm.swift */,
 				492194D12665590A00485BCA /* MenuTableViewController.swift */,
 				492194D52665624500485BCA /* GlobalSearchController.swift */,
 				492C650F26667C10003C9F57 /* CommentsMapController.swift */,
@@ -277,6 +284,8 @@
 				490107132668F30D0068E7BF /* RoutesPageUserPathController.swift */,
 				490107152668F4DB0068E7BF /* RoutesPageCategoryController.swift */,
 				4901071B2668F7140068E7BF /* RoutesPageCategoryLocationController.swift */,
+				49E5E20A266B57BD009857E9 /* AuthorizationPageController.swift */,
+				49E5E20E266B5BA4009857E9 /* RegistrationPageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -428,6 +437,7 @@
 				4991A09826676FC3003DC125 /* CommentView.storyboard in Resources */,
 				490107062668EA330068E7BF /* RoutesPageView.storyboard in Resources */,
 				498AE8A22665F7BC0003F0D4 /* MainPagePosterCell.xib in Resources */,
+				49E5E207266B46B6009857E9 /* RegistrationPageView.storyboard in Resources */,
 				498AE89E2665F6800003F0D4 /* MainPageRouteCell.xib in Resources */,
 				492C650E26667A4C003C9F57 /* CommentsMapView.storyboard in Resources */,
 				4991A09226676D8D003DC125 /* CommentCell.xib in Resources */,
@@ -437,6 +447,7 @@
 				49E431A72668B3D900ED86ED /* NoCommentsMapView.storyboard in Resources */,
 				498E83012663B9ED00EDD5F3 /* LaunchScreen.storyboard in Resources */,
 				490107102668F1F20068E7BF /* RoutesPageUserPathCell.xib in Resources */,
+				49E5E209266B46D0009857E9 /* ProfilePageView.storyboard in Resources */,
 				491B05E52667942D00ACB2DF /* LocationDetailView.storyboard in Resources */,
 				49E431A92668B7A100ED86ED /* PosterDetailView.storyboard in Resources */,
 				498E82FE2663B9ED00EDD5F3 /* Assets.xcassets in Resources */,
@@ -518,6 +529,8 @@
 				498AE8A02665F69E0003F0D4 /* MainPageRouteCell.swift in Sources */,
 				491B05E72667988E00ACB2DF /* LocationDetailController.swift in Sources */,
 				498E831D2663BDE400EDD5F3 /* LocationModel.swift in Sources */,
+				49E5E20F266B5BA4009857E9 /* RegistrationPageController.swift in Sources */,
+				49E5E20B266B57BD009857E9 /* AuthorizationPageController.swift in Sources */,
 				490107042668EA110068E7BF /* RoutesPageController.swift in Sources */,
 				4991A09626676DF2003DC125 /* DateExtension.swift in Sources */,
 				49E111AC2664E52F006BBC75 /* LocationManagerExtensions.swift in Sources */,
@@ -529,7 +542,6 @@
 				491B05E9266798DC00ACB2DF /* StringExtension.swift in Sources */,
 				498E83362663C9D800EDD5F3 /* PathController.swift in Sources */,
 				49E111AE2664E5BE006BBC75 /* MapSupport.swift in Sources */,
-				492194CC266552F900485BCA /* RegistrationForm.swift in Sources */,
 				49E431A32668B1F100ED86ED /* NoCommentsMapController.swift in Sources */,
 				498E82F92663B9E800EDD5F3 /* MainPage.swift in Sources */,
 				49E431AB2668B83B00ED86ED /* PosterDetailController.swift in Sources */,

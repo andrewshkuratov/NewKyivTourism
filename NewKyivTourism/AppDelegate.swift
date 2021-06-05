@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GIDSignIn.sharedInstance().clientID = "882834583265-1mmlua2e4gikdl4h5a62vroeb3d92m4c.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
+        ApplicationDelegate.shared.application(
+            application,
+            didFinishLaunchingWithOptions: launchOptions
+        )
         return true
     }
 
@@ -32,3 +40,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: GIDSignInDelegate {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        print(GIDSignIn.sharedInstance().handle(url))
+        return GIDSignIn.sharedInstance().handle(url)
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+                print("The user has not signed in before or they have since signed out.")
+            } else {
+                print("\(error.localizedDescription)")
+            }
+            return
+        }
+//        let vc = signIn.presentingViewController as! RegistrationForm
+        let accessToken = user.authentication.accessToken
+        print(user)
+//        vc.createSpinnerView {
+//            Network.GoogleAuth(accessToken!) { (message) in
+//                if let message = message {
+//                    vc.invokeAlert(message: message)
+//                } else {
+//                    vc.performSegue(withIdentifier: "goToMain", sender: vc)
+//                }
+//            }
+//        }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        print("Disconnected")
+    }
+}

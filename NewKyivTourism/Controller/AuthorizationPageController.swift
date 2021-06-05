@@ -1,8 +1,8 @@
 //
-//  RegistrationForm.swift
+//  AuthorizationPageController.swift
 //  NewKyivTourism
 //
-//  Created by Andrew on 31.05.2021.
+//  Created by Andrew on 05.06.2021.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 import GoogleSignIn
 
-class RegistrationForm: UIViewController {
+class AuthorizationPageController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
@@ -20,8 +20,8 @@ class RegistrationForm: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var googleRegistrationButton: GIDSignInButton!
     
-    @IBOutlet weak var emailError: UITextField!
-    @IBOutlet weak var passwordError: UITextField!
+    @IBOutlet weak var emailError: UILabel!
+    @IBOutlet weak var passwordError: UILabel!
     
     @IBOutlet weak var stackView: UIStackView!
     
@@ -54,14 +54,14 @@ class RegistrationForm: UIViewController {
     }
 }
 
-extension RegistrationForm: UITextFieldDelegate {
+extension AuthorizationPageController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
 }
 
-extension RegistrationForm {
+extension AuthorizationPageController {
     @objc func keyboardWillShow(sender: NSNotification) {
         if !email.isEditing {
             if let keyboardFrame: NSValue = sender.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
@@ -85,15 +85,23 @@ extension RegistrationForm {
     }
     
     @IBAction func goToMain(_ sender: Any) {
+        emailError.isHidden = false
+        password.isHidden = false
         guard let mail = email.text, !mail.isEmpty, isValidEmail(mail) else {
-            emailError.isHidden = false
-            emailError.text = NSLocalizedString("Input your email", comment: "")
+            if email.text!.isEmpty {
+                showEmailError(message: NSLocalizedString("Input your email", comment: ""))
+            } else if isValidEmail(email.text!) {
+                showEmailError(message: NSLocalizedString("Invalid email", comment: ""))
+            }
             return
         }
         
-        guard let pass = password.text, !pass.isEmpty else {
-            passwordError.isHidden = false
-            passwordError.text = NSLocalizedString("Input your password", comment: "")
+        guard let pass = password.text, !pass.isEmpty, pass.count > 8 else {
+            if password.text!.isEmpty {
+                showPasswordError(message: NSLocalizedString("Input your password", comment: ""))
+            } else if password.text!.count < 8 {
+                showPasswordError(message: NSLocalizedString("Invalid password", comment: ""))
+            }
             return
         }
         
@@ -109,6 +117,16 @@ extension RegistrationForm {
                 }
             }
         }
+    }
+    
+    private func showEmailError(message: String) {
+        emailError.isHidden = false
+        emailError.text = message
+    }
+    
+    private func showPasswordError(message: String) {
+        passwordError.isHidden = false
+        passwordError.text = message
     }
     
     private func isValidEmail(_ email: String) -> Bool {

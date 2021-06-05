@@ -30,7 +30,7 @@ class Network {
         
         Client.Router(endpoint: endpoint, data: data, header: header) { (response) in
             guard let responseData = response.data else {
-                completion(.failure(errorMessage as! Error))
+                completion(.failure(errorMessage as Error))
                 return
             }
             
@@ -83,6 +83,29 @@ class Network {
                 completion(error)
             }
             
+        }
+    }
+    
+    //MARK: Create/Update profile area
+    class func CreateAccount(data: Data, userEmail: String, userPassword: String, completion: @escaping(_ message: String?) -> Void) {
+        Client.Router(endpoint: .signUp, data: data, header: nil) { response in
+            guard JSON(response.data!).dictionary != nil else {
+                completion(error)
+                return
+            }
+            let logIn: LoginModel = LoginModel(username: userEmail, password: userPassword)
+            do {
+                let data = try JSONEncoder().encode(logIn)
+                Authorize(data: data) { (message) in
+                    if let message = message {
+                        completion(message)
+                    } else {
+                        completion(nil)
+                    }
+                }
+            } catch {
+                completion(error.localizedDescription)
+            }
         }
     }
     

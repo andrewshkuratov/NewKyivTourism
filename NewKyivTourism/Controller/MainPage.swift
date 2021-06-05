@@ -87,10 +87,35 @@ extension MainPage {
     
     //MARK: -Request for user location
     private func requestLocation() {
-        // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
-        // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
+    }
+    
+    @objc
+    func likeAction(_ sender: FaveButton) {
+        userIsLoggedInCheck { isLogged in
+            if isLogged {
+                if !self.favourites.contains(where: { (item) -> Bool in
+                    return item.id == sender.tag
+                }) {
+                    let dict = ["place_id" : "\(sender.tag)"]
+                    let data = try! JSONEncoder().encode(dict)
+                    Network.SendLike(data)
+                    self.favourites.append(self.mainData.places.first(where: { (i) -> Bool in
+                        return i.id == sender.tag
+                    })!)
+                } else {
+                    let dict = ["place_id" : "\(sender.tag)"]
+                    let data = try! JSONEncoder().encode(dict)
+                    Network.SendDislike(data)
+                    self.favourites.removeAll { (i) -> Bool in
+                        return i.id == sender.tag
+                    }
+                }
+            } else {
+                sender.setSelected(selected: false, animated: false)
+            }
+        }
     }
 }
 
@@ -141,56 +166,18 @@ extension MainPage {
             return cell
         } else {
             let cell = UITableViewCell()
-            let imageView = UIImageView(frame: Constants.Metrics.squareMetric)
-            imageView.image = UIImage(named: Constants.Images.imageSet1[indexPath.row])
-            imageView.contentMode = .redraw
-            imageView.makeDarker()
-            cell.addSubview(imageView)
             return cell
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        if indexPath.section == 1 {
-//            let item = mainData.posters[indexPath.row]
-//            let storyboard = UIStoryboard(name: Constants.Controllers.posterDetailController, bundle: nil)
-//            let nextViewController = storyboard.instantiateViewController(identifier: Constants.Controllers.posterDetailController) as! PosterDetailController
-//            nextViewController.posterData = item
-//            navigationController?.pushViewController(nextViewController, animated: true)
-//        } else {
-//            let item = mainData.places[indexPath.row]
-//            let storyboard = UIStoryboard(name: Constants.Controllers.locationDetailController, bundle: nil)
-//            let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.Controllers.locationDetailController) as! LocationDetailController
-//            nextViewController.locationInfo = item
-//            navigationController?.pushViewController(nextViewController, animated: true)
-//        }
-    }
-    
-    @objc
-    func likeAction(_ sender: FaveButton) {
-        userIsLoggedInCheck { isLogged in
-            if isLogged {
-                if !self.favourites.contains(where: { (item) -> Bool in
-                    return item.id == sender.tag
-                }) {
-                    let dict = ["place_id" : "\(sender.tag)"]
-                    let data = try! JSONEncoder().encode(dict)
-                    Network.SendLike(data)
-                    self.favourites.append(self.mainData.places.first(where: { (i) -> Bool in
-                        return i.id == sender.tag
-                    })!)
-                } else {
-                    let dict = ["place_id" : "\(sender.tag)"]
-                    let data = try! JSONEncoder().encode(dict)
-                    Network.SendDislike(data)
-                    self.favourites.removeAll { (i) -> Bool in
-                        return i.id == sender.tag
-                    }
-                }
-            } else {
-                sender.setSelected(selected: false, animated: false)
-            }
+        if indexPath.section == 1 {
+            let item = mainData.posters[indexPath.row]
+            showPosterController(item: item)
+        } else {
+            let item = mainData.places[indexPath.row]
+            showLocationController(item: item)
         }
     }
 }
@@ -203,16 +190,12 @@ extension MainPage: CarouselCollectionViewDataSource {
     func carouselCollectionView(_ carouselCollectionView: CarouselCollectionView, cellForItemAt index: Int, fakeIndexPath: IndexPath) -> UICollectionViewCell {
         let cell = carousel.dequeueReusableCell(withReuseIdentifier: Constants.Cells.mainRouteCell, for: fakeIndexPath) as! MainPageRouteCell
         let item = mainData.routes[index]
-        cell.setup(item, index)
-        cell.page.text = "\(index + 1)/\(mainData.routes.count)"
+        cell.setup(item, index, "\(index + 1)/\(mainData.routes.count)")
         return cell
     }
     
     func carouselCollectionView(_ carouselCollectionView: CarouselCollectionView, didSelectItemAt index: Int) {
-        let storyboard = UIStoryboard(name: Constants.Controllers.commentsMapController, bundle: nil)
-        let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.Controllers.commentsMapController) as! CommentsMapController
-        nextViewController.locations = mainData.routes[index].places
-        nextViewController.routeId = mainData.routes[index].id
-        navigationController?.pushViewController(nextViewController, animated: true)
+        let item = mainData.routes[index]
+        showRouteController(item: item)
     }
 }

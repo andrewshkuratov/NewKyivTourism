@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="McF-7P-wlb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Routes-->
+        <scene sceneID="M1A-r2-ezA">
+            <objects>
+                <tableViewController id="jxT-p5-Sk0" customClass="RoutesPageRouteController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fAo-fP-4k9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="nuB-8q-y1y">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVx-vO-9HI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <state key="normal" title="Sorting" image="rectangle.grid.2x2.fill" catalog="system">
+                                        <color key="titleColor" name="AccentColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sortRoutes:" destination="jxT-p5-Sk0" eventType="touchUpInside" id="AwG-0e-8in"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="JVx-vO-9HI" firstAttribute="leading" secondItem="nuB-8q-y1y" secondAttribute="leading" id="04K-rF-9Ur"/>
+                                <constraint firstItem="JVx-vO-9HI" firstAttribute="top" secondItem="nuB-8q-y1y" secondAttribute="top" id="3sa-ML-Ye6"/>
+                                <constraint firstAttribute="bottom" secondItem="JVx-vO-9HI" secondAttribute="bottom" id="Sda-tY-dro"/>
+                                <constraint firstAttribute="trailing" secondItem="JVx-vO-9HI" secondAttribute="trailing" id="iTY-8D-DMs"/>
+                            </constraints>
+                        </view>
+                        <connections>
+                            <outlet property="dataSource" destination="jxT-p5-Sk0" id="whi-zY-7rk"/>
+                            <outlet property="delegate" destination="jxT-p5-Sk0" id="J3I-mb-5UC"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Routes" image="scribble" catalog="system" selectedImage="scribble" id="hk7-dF-7bK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhX-gJ-22O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4501" y="94"/>
+        </scene>
+        <!--Route Build-->
+        <scene sceneID="HO7-Xi-ZNy">
+            <objects>
+                <viewController id="TeR-pd-3zQ" customClass="RoutesPageUserPathController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bvx-Lh-ih6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TZw-C0-acz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.97743946309999996" green="0.9497126937" blue="0.88232427840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="3Q4-EN-ZT8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxD-9u-ujI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                            <state key="normal" title="Filter data" image="filter">
+                                                <color key="titleColor" name="AccentColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="filterArray:" destination="TeR-pd-3zQ" eventType="touchUpInside" id="MCN-EX-ttX"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="mxD-9u-ujI" secondAttribute="trailing" id="6gN-TQ-PIe"/>
+                                        <constraint firstItem="mxD-9u-ujI" firstAttribute="top" secondItem="3Q4-EN-ZT8" secondAttribute="top" id="DeO-1R-lkh"/>
+                                        <constraint firstItem="mxD-9u-ujI" firstAttribute="leading" secondItem="3Q4-EN-ZT8" secondAttribute="leading" id="m2u-DU-365"/>
+                                        <constraint firstAttribute="bottom" secondItem="mxD-9u-ujI" secondAttribute="bottom" id="xlw-R1-lmX"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="userChooseLocation" id="s4w-Q8-YG3" customClass="UserBuildPathCell" customModule="NewKyivTourism" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74.5" width="414" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s4w-Q8-YG3" id="RFR-dd-rB8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BFe-BP-IWp">
+                                                    <rect key="frame" x="40" y="31" width="319" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="wf0-yo-LDb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BFe-BP-IWp" firstAttribute="top" secondItem="RFR-dd-rB8" secondAttribute="topMargin" constant="20" id="L1J-ch-gWs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BFe-BP-IWp" secondAttribute="trailing" constant="20" id="jOV-Zk-TcQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BFe-BP-IWp" secondAttribute="bottom" constant="20" id="rcQ-gS-7Zg"/>
+                                                <constraint firstItem="BFe-BP-IWp" firstAttribute="leading" secondItem="RFR-dd-rB8" secondAttribute="leadingMargin" constant="20" id="uQO-KW-jrC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="locationName" destination="BFe-BP-IWp" id="OeD-4t-Ll4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfg-J4-dy8">
+                                <rect key="frame" x="0.0" y="763" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FkF-GT-Mn1"/>
+                                </constraints>
+                                <state key="normal" title="Build a route">
+                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="buildPath:" destination="TeR-pd-3zQ" eventType="touchUpInside" id="W6t-44-WJH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2pr-Ht-XGc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TZw-C0-acz" firstAttribute="leading" secondItem="2pr-Ht-XGc" secondAttribute="leading" id="FV3-gh-ajK"/>
+                            <constraint firstItem="Nfg-J4-dy8" firstAttribute="leading" secondItem="2pr-Ht-XGc" secondAttribute="leading" id="NsW-qs-HoR"/>
+                            <constraint firstItem="Nfg-J4-dy8" firstAttribute="top" secondItem="TZw-C0-acz" secondAttribute="bottom" id="VBB-qA-Oc8"/>
+                            <constraint firstItem="2pr-Ht-XGc" firstAttribute="trailing" secondItem="TZw-C0-acz" secondAttribute="trailing" id="mXY-J5-49j"/>
+                            <constraint firstItem="2pr-Ht-XGc" firstAttribute="bottom" secondItem="Nfg-J4-dy8" secondAttribute="bottom" id="pPG-T7-Wtm"/>
+                            <constraint firstItem="2pr-Ht-XGc" firstAttribute="trailing" secondItem="Nfg-J4-dy8" secondAttribute="trailing" id="xw3-4J-8Y3"/>
+                            <constraint firstItem="TZw-C0-acz" firstAttribute="top" secondItem="2pr-Ht-XGc" secondAttribute="top" id="zYB-e8-ZrE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Route Build" image="routeBuild" selectedImage="routeBuild" id="4WE-VJ-fG9"/>
+                    <connections>
+                        <outlet property="buildRouteButton" destination="Nfg-J4-dy8" id="8Zb-Qf-MH4"/>
+                        <outlet property="filterButton" destination="mxD-9u-ujI" id="TRh-nn-N9T"/>
+                        <outlet property="tableView" destination="TZw-C0-acz" id="vJz-Yh-7kQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vx-n6-VIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5386" y="93"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="cFx-mS-MCU">
+            <objects>
+                <tableViewController id="OGa-V5-gn4" customClass="RoutesPageCategoryController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="b0G-Z6-wRS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="OGa-V5-gn4" id="MZt-lp-gHr"/>
+                            <outlet property="delegate" destination="OGa-V5-gn4" id="rMU-ik-V9o"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Categories" image="categories" selectedImage="categories" id="bg2-iv-6Fi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Cl4-Qu-GoP" kind="show" id="1Cm-9v-lzN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sb-mJ-heI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6280" y="94"/>
+        </scene>
+        <!--Routes Page Category Location Controller-->
+        <scene sceneID="57B-gd-UEM">
+            <objects>
+                <tableViewController storyboardIdentifier="CategoryLocationController" id="Cl4-Qu-GoP" customClass="RoutesPageCategoryLocationController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SHe-jd-GSw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Cl4-Qu-GoP" id="VYH-wN-3dP"/>
+                            <outlet property="delegate" destination="Cl4-Qu-GoP" id="EsY-8k-9FQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qXz-Qd-Tg9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XxX-r9-xhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7262" y="94"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="2HZ-Pc-SDX">
+            <objects>
+                <viewController id="0ju-g7-Eod" customClass="RoutesPageMapController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h7n-Ys-eio">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-dj-a8E">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="skl-RJ-KBT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="skl-RJ-KBT" firstAttribute="trailing" secondItem="yc4-dj-a8E" secondAttribute="trailing" id="9dC-KB-ghD"/>
+                            <constraint firstItem="yc4-dj-a8E" firstAttribute="top" secondItem="skl-RJ-KBT" secondAttribute="top" id="Y7j-QL-ozY"/>
+                            <constraint firstItem="skl-RJ-KBT" firstAttribute="bottom" secondItem="yc4-dj-a8E" secondAttribute="bottom" id="Yzg-XX-egE"/>
+                            <constraint firstItem="yc4-dj-a8E" firstAttribute="leading" secondItem="skl-RJ-KBT" secondAttribute="leading" id="mBe-Fg-Gjx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" selectedImage="map" id="84j-dH-xxn"/>
+                    <connections>
+                        <outlet property="mapView" destination="yc4-dj-a8E" id="XgN-B8-R8T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPR-Dh-ehD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3550.7246376811595" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TfV-iz-sEF">
+            <objects>
+                <navigationController id="McF-7P-wlb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Ch-JL-gf5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="daC-G6-qIJ" kind="relationship" relationship="rootViewController" id="KXf-jw-s8i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VN-BA-8H6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="94"/>
+        </scene>
+        <!--Routes-->
+        <scene sceneID="bRO-ao-Dnu">
+            <objects>
+                <tabBarController storyboardIdentifier="RoutesPageView" id="daC-G6-qIJ" customClass="RoutesPageController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Routes" id="c3z-e3-Uge">
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="pYo-QD-2bc"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8FE-UL-njq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="menuBarButton" destination="pYo-QD-2bc" id="B0M-HZ-yEL"/>
+                        <segue destination="0ju-g7-Eod" kind="relationship" relationship="viewControllers" id="CI6-Zm-2cI"/>
+                        <segue destination="jxT-p5-Sk0" kind="relationship" relationship="viewControllers" id="jhL-C6-lLn"/>
+                        <segue destination="TeR-pd-3zQ" kind="relationship" relationship="viewControllers" id="P37-9r-OyJ"/>
+                        <segue destination="OGa-V5-gn4" kind="relationship" relationship="viewControllers" id="aKL-15-QyP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sW3-DD-ouM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="25" height="25"/>
+        <image name="categories" width="25" height="25"/>
+        <image name="filter" width="24" height="24"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="rectangle.grid.2x2.fill" catalog="system" width="128" height="99"/>
+        <image name="routeBuild" width="30" height="30"/>
+        <image name="scribble" catalog="system" width="128" height="118"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

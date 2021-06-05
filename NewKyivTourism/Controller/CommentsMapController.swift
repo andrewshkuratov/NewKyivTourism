@@ -23,11 +23,7 @@ class CommentsMapController: PathController {
 
 extension CommentsMapController {
     @IBAction func showComments(_ sender: Any) {
-//        let storyboard = UIStoryboard(name: Constants.Controllers.commentController, bundle: nil)
-//        let nextViewController = storyboard.instantiateInitialViewController() as! CommentController
-//        nextViewController.locId = routeId
-//        nextViewController.path = Constants.Path.route
-//        self.navigationController?.pushViewController(nextViewController, animated: true)
+        showCommentsController(routeId: routeId, endpoint: Constants.Path.route)
     }
     
     override func willMove(toParent parent: UIViewController?) {

@@ -174,4 +174,49 @@ extension UIViewController {
         alert.addAction(UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func showCommentsController(routeId: Int, endpoint: String) {
+        let storyboard = UIStoryboard(name: Constants.Controllers.commentController, bundle: nil)
+        let nextViewController = storyboard.instantiateInitialViewController() as! CommentController
+        nextViewController.locId = routeId
+        nextViewController.path = endpoint
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    func showLocationMapController(locations: Array<LocationModel>) {
+        let storyboard = UIStoryboard(name: Constants.Controllers.noCommentsMapController, bundle: nil)
+        let nextViewController = storyboard.instantiateInitialViewController() as! NoCommentsMapController
+        nextViewController.locations = locations
+        nextViewController.routeId = -1
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    func showPosterController(item: PosterModel) {
+        let storyboard = UIStoryboard(name: Constants.Controllers.posterDetailController, bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(identifier: Constants.Controllers.posterDetailController) as! PosterDetailController
+        nextViewController.posterData = item
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    func showLocationController(item: LocationModel) {
+        let storyboard = UIStoryboard(name: Constants.Controllers.locationDetailController, bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.Controllers.locationDetailController) as! LocationDetailController
+        nextViewController.locationInfo = item
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    func showRouteController(item: RouteModel) {
+        let storyboard = UIStoryboard(name: Constants.Controllers.commentsMapController, bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.Controllers.commentsMapController) as! CommentsMapController
+        nextViewController.locations = item.places
+        nextViewController.routeId = item.id
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    func showRoutesPageCategoryLocation(item: CategoryModel) {
+        let storyboard = UIStoryboard(name: "RoutesPageView", bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: "CategoryLocationController") as! RoutesPageCategoryLocationController
+        nextViewController.index = item.id
+        navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }

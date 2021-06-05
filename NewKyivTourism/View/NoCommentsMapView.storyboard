@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eyh-ou-5Uu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--No Comments Map Controller-->
+        <scene sceneID="dW4-il-WHL">
+            <objects>
+                <viewController storyboardIdentifier="NoCommentsMapView" id="Eyh-ou-5Uu" customClass="NoCommentsMapController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gIx-jv-pKV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRp-dJ-nPU" customClass="MKMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7B-21-bV8">
+                                <rect key="frame" x="20" y="95" width="71" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-Ee-B4m">
+                                <rect key="frame" x="20" y="762" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMY-mi-Qz3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Start Route">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRoute:" destination="Eyh-ou-5Uu" eventType="touchUpInside" id="zCr-CJ-AHN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BMY-mi-Qz3" secondAttribute="bottom" id="W8I-iG-B9E"/>
+                                    <constraint firstItem="BMY-mi-Qz3" firstAttribute="top" secondItem="CuA-Ee-B4m" secondAttribute="top" id="fZI-Az-fAS"/>
+                                    <constraint firstAttribute="height" constant="50" id="zrj-x6-Wdo"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uSy-dF-SdB">
+                                <rect key="frame" x="20" y="54" width="374" height="32"/>
+                                <segments>
+                                    <segment title="" image="figure.walk" catalog="system"/>
+                                    <segment title="" image="car" catalog="system"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="linkColor"/>
+                                <connections>
+                                    <action selector="changeDirection:" destination="Eyh-ou-5Uu" eventType="valueChanged" id="7Kn-jS-Oy6"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jQR-66-qv0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRp-dJ-nPU" firstAttribute="leading" secondItem="jQR-66-qv0" secondAttribute="leading" id="174-pm-TdE"/>
+                            <constraint firstItem="jQR-66-qv0" firstAttribute="trailing" secondItem="ZRp-dJ-nPU" secondAttribute="trailing" id="6Nj-2t-lTH"/>
+                            <constraint firstItem="jQR-66-qv0" firstAttribute="bottom" secondItem="ZRp-dJ-nPU" secondAttribute="bottom" id="CSv-qN-WH8"/>
+                            <constraint firstItem="uSy-dF-SdB" firstAttribute="leading" secondItem="jQR-66-qv0" secondAttribute="leading" constant="20" id="KFz-H0-f19"/>
+                            <constraint firstItem="jQR-66-qv0" firstAttribute="trailing" secondItem="uSy-dF-SdB" secondAttribute="trailing" constant="20" id="U4M-0d-Epz"/>
+                            <constraint firstItem="CuA-Ee-B4m" firstAttribute="leading" secondItem="jQR-66-qv0" secondAttribute="leading" constant="20" id="c8b-Q6-Ro7"/>
+                            <constraint firstItem="jQR-66-qv0" firstAttribute="trailing" secondItem="CuA-Ee-B4m" secondAttribute="trailing" constant="20" id="mJz-WO-6dh"/>
+                            <constraint firstItem="n7B-21-bV8" firstAttribute="leading" secondItem="jQR-66-qv0" secondAttribute="leading" constant="20" id="oKe-e7-hew"/>
+                            <constraint firstItem="n7B-21-bV8" firstAttribute="top" secondItem="uSy-dF-SdB" secondAttribute="bottom" constant="10" id="ocv-Sb-blT"/>
+                            <constraint firstItem="ZRp-dJ-nPU" firstAttribute="top" secondItem="jQR-66-qv0" secondAttribute="top" id="qlL-qx-134"/>
+                            <constraint firstItem="uSy-dF-SdB" firstAttribute="top" secondItem="jQR-66-qv0" secondAttribute="top" constant="10" id="rkr-fP-AFI"/>
+                            <constraint firstItem="jQR-66-qv0" firstAttribute="bottom" secondItem="CuA-Ee-B4m" secondAttribute="bottom" constant="50" id="vBY-Ra-2Ol"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MnA-Z3-gC1"/>
+                    <connections>
+                        <outlet property="mapButton" destination="BMY-mi-Qz3" id="6ET-lA-3wf"/>
+                        <outlet property="mapView" destination="ZRp-dJ-nPU" id="1JP-wo-yyK"/>
+                        <outlet property="startButton" destination="BMY-mi-Qz3" id="jjj-ha-7Cp"/>
+                        <outlet property="timeLabel" destination="n7B-21-bV8" id="UWX-Yx-wdx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qu2-JR-5dl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4228" y="-1306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" catalog="system" width="128" height="93"/>
+        <image name="figure.walk" catalog="system" width="95" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

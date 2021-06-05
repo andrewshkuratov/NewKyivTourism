@@ -65,11 +65,11 @@ struct Constants {
     }
     
     struct Controllers {
-        static let posterDetailController = "PosterDetailController"
-        static let locationDetailController = "LocationDetailController"
+        static let posterDetailController = "PosterDetailView"
+        static let locationDetailController = "LocationDetailView"
         static let commentsMapController = "CommentsMapView"
-        static let noCommentsMapController = "NoCommentsMapController"
-        static let commentController = "CommentController"
+        static let noCommentsMapController = "NoCommentsMapView"
+        static let commentController = "CommentView"
         static let notLoggedInController = "Registration"
     }
     
@@ -78,7 +78,9 @@ struct Constants {
         static let mainPosterCell = "MainPagePosterCell"
         static let mainRouteCell = "MainPageRouteCell"
         
-        static let categoryCell = "CategoryCell"
+        static let routeRoutesCell = "RoutesPageRouteCell"
+        
+        static let categoryCell = "RoutesPageCategoryCell"
         static let commentCell = "CommentCell"
         static let buildPathCell = "UserBuildPathCell"
     }

@@ -13,7 +13,7 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 
 class Network {
-    private static let error = NSLocalizedString("Some error occured", comment: "")
+    private static let error = NSLocalizedString("Check your internet connection, or try again later.", comment: "")
     
     typealias result<T> = (Result<T, Error>) -> Void
     
@@ -110,6 +110,63 @@ class Network {
         let d = try! JSONEncoder().encode(commData)
         request.httpBody = d
         
+        AF.request(request as URLRequestConvertible).responseJSON { response in
+            print(response.debugDescription)
+            completion()
+        }
+    }
+    
+    //MARK: Location
+    class func GetLocationByIndex(_ index: String, completion: @escaping(_ main: Array<LocationModel>?, _ error: String?) -> Void) {
+        let url = URL(string: Endpoint.category.description + "/\(index)")
+        var request = URLRequest(url: url!)
+        request.method = .get
+        
+        AF.request(request as URLRequestConvertible).responseJSON { (response) in
+            print(response.debugDescription)
+            if let data = response.data {
+                do {
+                    let userInfo = try JSONDecoder().decode(LocationResponse.self, from: data)
+                    completion(userInfo.data, nil)
+                } catch {
+                    completion(nil, error.localizedDescription)
+                }
+            } else {
+                completion(nil, error)
+            }
+        }
+    }
+    
+    //MARK: Get/Create comments
+    class func GetComments(_ type: String, _ locId: Int, completion: @escaping(Result<Array<CommentModel>, Error>) -> Void) {
+        let url = URL(string: Constants.Network.baseURL + "/api/\(type)/\(locId)/comments")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        AF.request(request as URLRequestConvertible).responseJSON { response in
+            print(response.debugDescription)
+            if let data = response.data {
+                do {
+                    let userInfo = try JSONDecoder().decode(CommentResponse.self, from: data)
+                    completion(.success(userInfo.data))
+                } catch {
+                    completion(.failure(error))
+                }
+            } else {
+                completion(.failure(error as! Error))
+            }
+        }
+    }
+    
+    class func PostComment(_ type: String, _ locId: Int, _ comment: String, completion: @escaping() -> Void) {
+        let url = URL(string: Constants.Network.baseURL + "/api/\(type)/\(locId)/comments/store")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.headers = getHeader()
+        let commData = ["comment" : comment]
+        let d = try! JSONEncoder().encode(commData)
+        request.httpBody = d
         AF.request(request as URLRequestConvertible).responseJSON { response in
             print(response.debugDescription)
             completion()

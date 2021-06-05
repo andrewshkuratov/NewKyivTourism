@@ -119,28 +119,16 @@ extension GlobalSearchController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        let sectionName = sectionsArray[indexPath.section]
-//        if sectionName == locationSection {
-//            let item = data.places[indexPath.row]
-//            let storyboard = UIStoryboard(name: Constants.Controllers.locationDetailController, bundle: nil)
-//            let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.Controllers.locationDetailController) as! LocationDetailController
-//            nextViewController.locationInfo = item
-//            navigationController?.pushViewController(nextViewController, animated: true)
-//        }
-//        else if sectionName == routeSection {
-//            let item = data.routes[indexPath.row]
-//            let storyboard = UIStoryboard(name: Constants.Controllers.commentsMapController, bundle: nil)
-//            let nextViewController = storyboard.instantiateViewController(withIdentifier: Constants.Controllers.commentsMapController) as! CommentsMapController
-//            nextViewController.locations = item.places
-//            nextViewController.routeId = item.id
-//            navigationController?.pushViewController(nextViewController, animated: true)
-//        }
-//        else if sectionName == posterSection {
-//            let item = data.posters[indexPath.row]
-//            let storyboard = UIStoryboard(name: Constants.Controllers.posterDetailController, bundle: nil)
-//            let nextVC = storyboard.instantiateViewController(identifier: Constants.Controllers.posterDetailController) as! PosterDetailController
-//            nextVC.posterData = item
-//            navigationController?.pushViewController(nextVC, animated: true)
-//        }
+        let sectionName = sectionsArray[indexPath.section]
+        if sectionName == locationSection {
+            let item = data.places[indexPath.row]
+            showLocationController(item: item)
+        } else if sectionName == routeSection {
+            let item = data.routes[indexPath.row]
+            showRouteController(item: item)
+        } else if sectionName == posterSection {
+            let item = data.posters[indexPath.row]
+            showPosterController(item: item)
+        }
     }
 }

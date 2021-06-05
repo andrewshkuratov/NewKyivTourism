@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490107042668EA110068E7BF /* RoutesPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490107032668EA110068E7BF /* RoutesPageController.swift */; };
+		490107062668EA330068E7BF /* RoutesPageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490107052668EA330068E7BF /* RoutesPageView.storyboard */; };
+		490107082668EB120068E7BF /* RoutesPageMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490107072668EB120068E7BF /* RoutesPageMapController.swift */; };
+		4901070A2668EF340068E7BF /* RoutesPageRouteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490107092668EF340068E7BF /* RoutesPageRouteController.swift */; };
+		4901070C2668F06D0068E7BF /* RoutesPageRouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4901070B2668F06D0068E7BF /* RoutesPageRouteCell.xib */; };
+		4901070E2668F0AF0068E7BF /* RoutesPageRouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901070D2668F0AF0068E7BF /* RoutesPageRouteCell.swift */; };
+		490107102668F1F20068E7BF /* RoutesPageUserPathCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4901070F2668F1F20068E7BF /* RoutesPageUserPathCell.xib */; };
+		490107122668F2290068E7BF /* RoutesPageUserPathCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490107112668F2290068E7BF /* RoutesPageUserPathCell.swift */; };
+		490107142668F30D0068E7BF /* RoutesPageUserPathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490107132668F30D0068E7BF /* RoutesPageUserPathController.swift */; };
+		490107162668F4DB0068E7BF /* RoutesPageCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490107152668F4DB0068E7BF /* RoutesPageCategoryController.swift */; };
+		490107182668F6130068E7BF /* RoutesPageCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490107172668F6130068E7BF /* RoutesPageCategoryCell.xib */; };
+		4901071A2668F6310068E7BF /* RoutesPageCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490107192668F6310068E7BF /* RoutesPageCategoryCell.swift */; };
+		4901071C2668F7140068E7BF /* RoutesPageCategoryLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901071B2668F7140068E7BF /* RoutesPageCategoryLocationController.swift */; };
+		491B05E52667942D00ACB2DF /* LocationDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491B05E42667942D00ACB2DF /* LocationDetailView.storyboard */; };
+		491B05E72667988E00ACB2DF /* LocationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B05E62667988E00ACB2DF /* LocationDetailController.swift */; };
+		491B05E9266798DC00ACB2DF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B05E8266798DC00ACB2DF /* StringExtension.swift */; };
+		491B05EB2667A23700ACB2DF /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B05EA2667A23700ACB2DF /* LikeButton.swift */; };
 		492194CC266552F900485BCA /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194CB266552F900485BCA /* RegistrationForm.swift */; };
 		492194CE266554D900485BCA /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194CD266554D900485BCA /* ViewExtensions.swift */; };
 		492194D0266556B100485BCA /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194CF266556B100485BCA /* SpinnerViewController.swift */; };
@@ -46,15 +63,42 @@
 		498E83322663C6FD00EDD5F3 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E83312663C6FD00EDD5F3 /* TimerView.swift */; };
 		498E83342663C83B00EDD5F3 /* AchievementsServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E83332663C83B00EDD5F3 /* AchievementsServer.swift */; };
 		498E83362663C9D800EDD5F3 /* PathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E83352663C9D800EDD5F3 /* PathController.swift */; };
+		4991A09026676A71003DC125 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4991A08F26676A71003DC125 /* CommentController.swift */; };
+		4991A09226676D8D003DC125 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4991A09126676D8D003DC125 /* CommentCell.xib */; };
+		4991A09426676DC7003DC125 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4991A09326676DC7003DC125 /* CommentCell.swift */; };
+		4991A09626676DF2003DC125 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4991A09526676DF2003DC125 /* DateExtension.swift */; };
+		4991A09826676FC3003DC125 /* CommentView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4991A09726676FC3003DC125 /* CommentView.storyboard */; };
 		49E111AA2664E453006BBC75 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E111A92664E453006BBC75 /* ViewControllerExtension.swift */; };
 		49E111AC2664E52F006BBC75 /* LocationManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E111AB2664E52F006BBC75 /* LocationManagerExtensions.swift */; };
 		49E111AE2664E5BE006BBC75 /* MapSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E111AD2664E5BE006BBC75 /* MapSupport.swift */; };
+		49E431A32668B1F100ED86ED /* NoCommentsMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E431A22668B1F100ED86ED /* NoCommentsMapController.swift */; };
+		49E431A52668B35400ED86ED /* CLLocationCoordinate2DExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E431A42668B35400ED86ED /* CLLocationCoordinate2DExtension.swift */; };
+		49E431A72668B3D900ED86ED /* NoCommentsMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E431A62668B3D900ED86ED /* NoCommentsMapView.storyboard */; };
+		49E431A92668B7A100ED86ED /* PosterDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E431A82668B7A100ED86ED /* PosterDetailView.storyboard */; };
+		49E431AB2668B83B00ED86ED /* PosterDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E431AA2668B83B00ED86ED /* PosterDetailController.swift */; };
 		C3A305D835A19358210F66F3 /* Pods_NewKyivTourism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C84335B2956596108CCC949 /* Pods_NewKyivTourism.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36E2006353286EF27FAE41A3 /* Pods-NewKyivTourism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewKyivTourism.release.xcconfig"; path = "Target Support Files/Pods-NewKyivTourism/Pods-NewKyivTourism.release.xcconfig"; sourceTree = "<group>"; };
 		38D4F5D8E640E984507B8C96 /* Pods-NewKyivTourism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewKyivTourism.debug.xcconfig"; path = "Target Support Files/Pods-NewKyivTourism/Pods-NewKyivTourism.debug.xcconfig"; sourceTree = "<group>"; };
+		490107032668EA110068E7BF /* RoutesPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageController.swift; sourceTree = "<group>"; };
+		490107052668EA330068E7BF /* RoutesPageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutesPageView.storyboard; sourceTree = "<group>"; };
+		490107072668EB120068E7BF /* RoutesPageMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageMapController.swift; sourceTree = "<group>"; };
+		490107092668EF340068E7BF /* RoutesPageRouteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageRouteController.swift; sourceTree = "<group>"; };
+		4901070B2668F06D0068E7BF /* RoutesPageRouteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesPageRouteCell.xib; sourceTree = "<group>"; };
+		4901070D2668F0AF0068E7BF /* RoutesPageRouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageRouteCell.swift; sourceTree = "<group>"; };
+		4901070F2668F1F20068E7BF /* RoutesPageUserPathCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesPageUserPathCell.xib; sourceTree = "<group>"; };
+		490107112668F2290068E7BF /* RoutesPageUserPathCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageUserPathCell.swift; sourceTree = "<group>"; };
+		490107132668F30D0068E7BF /* RoutesPageUserPathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageUserPathController.swift; sourceTree = "<group>"; };
+		490107152668F4DB0068E7BF /* RoutesPageCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageCategoryController.swift; sourceTree = "<group>"; };
+		490107172668F6130068E7BF /* RoutesPageCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesPageCategoryCell.xib; sourceTree = "<group>"; };
+		490107192668F6310068E7BF /* RoutesPageCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageCategoryCell.swift; sourceTree = "<group>"; };
+		4901071B2668F7140068E7BF /* RoutesPageCategoryLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPageCategoryLocationController.swift; sourceTree = "<group>"; };
+		491B05E42667942D00ACB2DF /* LocationDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationDetailView.storyboard; sourceTree = "<group>"; };
+		491B05E62667988E00ACB2DF /* LocationDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailController.swift; sourceTree = "<group>"; };
+		491B05E8266798DC00ACB2DF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		491B05EA2667A23700ACB2DF /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		492194CB266552F900485BCA /* RegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationForm.swift; sourceTree = "<group>"; };
 		492194CD266554D900485BCA /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		492194CF266556B100485BCA /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
@@ -98,9 +142,19 @@
 		498E83312663C6FD00EDD5F3 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		498E83332663C83B00EDD5F3 /* AchievementsServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServer.swift; sourceTree = "<group>"; };
 		498E83352663C9D800EDD5F3 /* PathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathController.swift; sourceTree = "<group>"; };
+		4991A08F26676A71003DC125 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		4991A09126676D8D003DC125 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		4991A09326676DC7003DC125 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		4991A09526676DF2003DC125 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		4991A09726676FC3003DC125 /* CommentView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommentView.storyboard; sourceTree = "<group>"; };
 		49E111A92664E453006BBC75 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		49E111AB2664E52F006BBC75 /* LocationManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerExtensions.swift; sourceTree = "<group>"; };
 		49E111AD2664E5BE006BBC75 /* MapSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSupport.swift; sourceTree = "<group>"; };
+		49E431A22668B1F100ED86ED /* NoCommentsMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCommentsMapController.swift; sourceTree = "<group>"; };
+		49E431A42668B35400ED86ED /* CLLocationCoordinate2DExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2DExtension.swift; sourceTree = "<group>"; };
+		49E431A62668B3D900ED86ED /* NoCommentsMapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoCommentsMapView.storyboard; sourceTree = "<group>"; };
+		49E431A82668B7A100ED86ED /* PosterDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PosterDetailView.storyboard; sourceTree = "<group>"; };
+		49E431AA2668B83B00ED86ED /* PosterDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterDetailController.swift; sourceTree = "<group>"; };
 		9C84335B2956596108CCC949 /* Pods_NewKyivTourism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewKyivTourism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +176,10 @@
 				498AE8992665F4D00003F0D4 /* MainPageLocationCell.xib */,
 				498AE89D2665F6800003F0D4 /* MainPageRouteCell.xib */,
 				498AE8A12665F7BC0003F0D4 /* MainPagePosterCell.xib */,
+				4901070B2668F06D0068E7BF /* RoutesPageRouteCell.xib */,
+				4901070F2668F1F20068E7BF /* RoutesPageUserPathCell.xib */,
+				490107172668F6130068E7BF /* RoutesPageCategoryCell.xib */,
+				4991A09126676D8D003DC125 /* CommentCell.xib */,
 			);
 			path = TableCellViews;
 			sourceTree = "<group>";
@@ -132,6 +190,10 @@
 				498AE89B2665F54E0003F0D4 /* MainPageLocationCell.swift */,
 				498AE89F2665F69E0003F0D4 /* MainPageRouteCell.swift */,
 				498AE8A32665F7E90003F0D4 /* MainPagePosterCell.swift */,
+				4901070D2668F0AF0068E7BF /* RoutesPageRouteCell.swift */,
+				490107112668F2290068E7BF /* RoutesPageUserPathCell.swift */,
+				4991A09326676DC7003DC125 /* CommentCell.swift */,
+				490107192668F6310068E7BF /* RoutesPageCategoryCell.swift */,
 			);
 			path = TableCellModels;
 			sourceTree = "<group>";
@@ -188,6 +250,11 @@
 				498E82FF2663B9ED00EDD5F3 /* LaunchScreen.storyboard */,
 				498E82FA2663B9E800EDD5F3 /* Main.storyboard */,
 				492C650D26667A4C003C9F57 /* CommentsMapView.storyboard */,
+				4991A09726676FC3003DC125 /* CommentView.storyboard */,
+				491B05E42667942D00ACB2DF /* LocationDetailView.storyboard */,
+				49E431A62668B3D900ED86ED /* NoCommentsMapView.storyboard */,
+				49E431A82668B7A100ED86ED /* PosterDetailView.storyboard */,
+				490107052668EA330068E7BF /* RoutesPageView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +267,16 @@
 				492194D12665590A00485BCA /* MenuTableViewController.swift */,
 				492194D52665624500485BCA /* GlobalSearchController.swift */,
 				492C650F26667C10003C9F57 /* CommentsMapController.swift */,
+				4991A08F26676A71003DC125 /* CommentController.swift */,
+				491B05E62667988E00ACB2DF /* LocationDetailController.swift */,
+				49E431A22668B1F100ED86ED /* NoCommentsMapController.swift */,
+				49E431AA2668B83B00ED86ED /* PosterDetailController.swift */,
+				490107032668EA110068E7BF /* RoutesPageController.swift */,
+				490107072668EB120068E7BF /* RoutesPageMapController.swift */,
+				490107092668EF340068E7BF /* RoutesPageRouteController.swift */,
+				490107132668F30D0068E7BF /* RoutesPageUserPathController.swift */,
+				490107152668F4DB0068E7BF /* RoutesPageCategoryController.swift */,
+				4901071B2668F7140068E7BF /* RoutesPageCategoryLocationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +314,9 @@
 				49E111AB2664E52F006BBC75 /* LocationManagerExtensions.swift */,
 				492194CD266554D900485BCA /* ViewExtensions.swift */,
 				492194D7266562E800485BCA /* TableViewExtensions.swift */,
+				4991A09526676DF2003DC125 /* DateExtension.swift */,
+				491B05E8266798DC00ACB2DF /* StringExtension.swift */,
+				49E431A42668B35400ED86ED /* CLLocationCoordinate2DExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,6 +324,8 @@
 		498E83112663BC1B00EDD5F3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				498E83312663C6FD00EDD5F3 /* TimerView.swift */,
+				498E83352663C9D800EDD5F3 /* PathController.swift */,
 				498E83132663BC3B00EDD5F3 /* SWRevealViewController.h */,
 				498E83122663BC3B00EDD5F3 /* NewKyivTourism-Bridging-Header.h */,
 				498E83142663BC3B00EDD5F3 /* SWRevealViewController.m */,
@@ -251,6 +333,7 @@
 				498E83332663C83B00EDD5F3 /* AchievementsServer.swift */,
 				49E111AD2664E5BE006BBC75 /* MapSupport.swift */,
 				492194D326655B3200485BCA /* LikeTable.swift */,
+				491B05EA2667A23700ACB2DF /* LikeButton.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -258,8 +341,6 @@
 		498E83302663C6EE00EDD5F3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				498E83312663C6FD00EDD5F3 /* TimerView.swift */,
-				498E83352663C9D800EDD5F3 /* PathController.swift */,
 				492194CF266556B100485BCA /* SpinnerViewController.swift */,
 				498AE8A9266607970003F0D4 /* PaddingLabel.swift */,
 			);
@@ -344,11 +425,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4991A09826676FC3003DC125 /* CommentView.storyboard in Resources */,
+				490107062668EA330068E7BF /* RoutesPageView.storyboard in Resources */,
 				498AE8A22665F7BC0003F0D4 /* MainPagePosterCell.xib in Resources */,
 				498AE89E2665F6800003F0D4 /* MainPageRouteCell.xib in Resources */,
 				492C650E26667A4C003C9F57 /* CommentsMapView.storyboard in Resources */,
+				4991A09226676D8D003DC125 /* CommentCell.xib in Resources */,
+				4901070C2668F06D0068E7BF /* RoutesPageRouteCell.xib in Resources */,
 				498AE89A2665F4D00003F0D4 /* MainPageLocationCell.xib in Resources */,
+				490107182668F6130068E7BF /* RoutesPageCategoryCell.xib in Resources */,
+				49E431A72668B3D900ED86ED /* NoCommentsMapView.storyboard in Resources */,
 				498E83012663B9ED00EDD5F3 /* LaunchScreen.storyboard in Resources */,
+				490107102668F1F20068E7BF /* RoutesPageUserPathCell.xib in Resources */,
+				491B05E52667942D00ACB2DF /* LocationDetailView.storyboard in Resources */,
+				49E431A92668B7A100ED86ED /* PosterDetailView.storyboard in Resources */,
 				498E82FE2663B9ED00EDD5F3 /* Assets.xcassets in Resources */,
 				498E82FC2663B9E800EDD5F3 /* Main.storyboard in Resources */,
 			);
@@ -422,39 +512,57 @@
 			files = (
 				498E83322663C6FD00EDD5F3 /* TimerView.swift in Sources */,
 				498E83342663C83B00EDD5F3 /* AchievementsServer.swift in Sources */,
+				4901070E2668F0AF0068E7BF /* RoutesPageRouteCell.swift in Sources */,
 				49E111AA2664E453006BBC75 /* ViewControllerExtension.swift in Sources */,
+				490107142668F30D0068E7BF /* RoutesPageUserPathController.swift in Sources */,
 				498AE8A02665F69E0003F0D4 /* MainPageRouteCell.swift in Sources */,
+				491B05E72667988E00ACB2DF /* LocationDetailController.swift in Sources */,
 				498E831D2663BDE400EDD5F3 /* LocationModel.swift in Sources */,
+				490107042668EA110068E7BF /* RoutesPageController.swift in Sources */,
+				4991A09626676DF2003DC125 /* DateExtension.swift in Sources */,
 				49E111AC2664E52F006BBC75 /* LocationManagerExtensions.swift in Sources */,
 				498AE89C2665F54E0003F0D4 /* MainPageLocationCell.swift in Sources */,
 				492194D22665590A00485BCA /* MenuTableViewController.swift in Sources */,
+				491B05EB2667A23700ACB2DF /* LikeButton.swift in Sources */,
+				4991A09426676DC7003DC125 /* CommentCell.swift in Sources */,
 				498E83252663BED500EDD5F3 /* MainPageModel.swift in Sources */,
+				491B05E9266798DC00ACB2DF /* StringExtension.swift in Sources */,
 				498E83362663C9D800EDD5F3 /* PathController.swift in Sources */,
 				49E111AE2664E5BE006BBC75 /* MapSupport.swift in Sources */,
 				492194CC266552F900485BCA /* RegistrationForm.swift in Sources */,
+				49E431A32668B1F100ED86ED /* NoCommentsMapController.swift in Sources */,
 				498E82F92663B9E800EDD5F3 /* MainPage.swift in Sources */,
+				49E431AB2668B83B00ED86ED /* PosterDetailController.swift in Sources */,
 				492194D8266562E800485BCA /* TableViewExtensions.swift in Sources */,
+				4901071A2668F6310068E7BF /* RoutesPageCategoryCell.swift in Sources */,
 				498E83272663BF2100EDD5F3 /* CommentModel.swift in Sources */,
 				498E831B2663BD0700EDD5F3 /* ProfileModel.swift in Sources */,
 				498E832B2663C37200EDD5F3 /* Constants.swift in Sources */,
+				4991A09026676A71003DC125 /* CommentController.swift in Sources */,
 				498E832D2663C54700EDD5F3 /* Client.swift in Sources */,
 				498E83192663BCE800EDD5F3 /* LoginModel.swift in Sources */,
 				498E82F52663B9E800EDD5F3 /* AppDelegate.swift in Sources */,
 				492194D0266556B100485BCA /* SpinnerViewController.swift in Sources */,
 				498E82F72663B9E800EDD5F3 /* SceneDelegate.swift in Sources */,
+				49E431A52668B35400ED86ED /* CLLocationCoordinate2DExtension.swift in Sources */,
+				4901070A2668EF340068E7BF /* RoutesPageRouteController.swift in Sources */,
 				498E832F2663C5B900EDD5F3 /* Network.swift in Sources */,
 				492194CE266554D900485BCA /* ViewExtensions.swift in Sources */,
 				498E83232663BEAC00EDD5F3 /* RouteModel.swift in Sources */,
 				498E83212663BE6900EDD5F3 /* PosterModel.swift in Sources */,
 				492194D426655B3200485BCA /* LikeTable.swift in Sources */,
+				490107122668F2290068E7BF /* RoutesPageUserPathCell.swift in Sources */,
 				492194D62665624500485BCA /* GlobalSearchController.swift in Sources */,
+				490107162668F4DB0068E7BF /* RoutesPageCategoryController.swift in Sources */,
 				498AE8AA266607970003F0D4 /* PaddingLabel.swift in Sources */,
 				498E83292663C34400EDD5F3 /* Endpoint.swift in Sources */,
 				498E83172663BC9700EDD5F3 /* SocialNetworkModel.swift in Sources */,
 				498E831F2663BE2600EDD5F3 /* CategoryModel.swift in Sources */,
 				498AE8A42665F7E90003F0D4 /* MainPagePosterCell.swift in Sources */,
+				490107082668EB120068E7BF /* RoutesPageMapController.swift in Sources */,
 				498E83152663BC3B00EDD5F3 /* SWRevealViewController.m in Sources */,
 				492C651026667C10003C9F57 /* CommentsMapController.swift in Sources */,
+				4901071C2668F7140068E7BF /* RoutesPageCategoryLocationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

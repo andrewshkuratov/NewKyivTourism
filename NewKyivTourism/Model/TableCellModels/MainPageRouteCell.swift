@@ -17,7 +17,7 @@ class MainPageRouteCell: UICollectionViewCell {
     @IBOutlet weak var locationDescription: UILabel!
     @IBOutlet weak var page: UILabel!
     
-    func setup(_ item: RouteModel, _ index: Int) {
+    func setup(_ item: RouteModel, _ index: Int, _ pageText: String) {
         locationName.roundCorner()
         
         locationName.text = item.title
@@ -49,5 +49,7 @@ class MainPageRouteCell: UICollectionViewCell {
         }
         
         locationDescription.text = item.title
+        
+        page.text = pageText
     }
 }

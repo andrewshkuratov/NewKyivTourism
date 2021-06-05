@@ -11,10 +11,7 @@ import MapKit
 class MapSupport {
     func buildPath(from origin: CLLocationCoordinate2D, locations: Array<LocationModel>, mapView: MKMapView, transport: MKDirectionsTransportType) {
         if !mapView.overlays.isEmpty {
-            print("Removed")
             mapView.removeOverlays(mapView.overlays)
-        } else {
-            print("DidNotRemoved")
         }
         
         var locs: Array<LocationModel> = []

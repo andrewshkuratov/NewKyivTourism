@@ -36,7 +36,6 @@ class PathController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guard CLLocationManager.locationServicesEnabled() else {
-            print("Disabled")
             return
         }
         self.setupController()
@@ -53,7 +52,6 @@ class PathController: UIViewController {
     }
     
     deinit {
-        print(#line, #file)
         locationManager.stopUpdatingLocation()
     }
     
@@ -95,6 +93,7 @@ extension PathController {
                 } else {
                     self.timer.runTimer(label: self.timeLabel)
                     self.startButton.setTitle(NSLocalizedString("Stop", comment: ""), for: .normal)
+                    self.startButton.backgroundColor = .systemRed
                     self.changeStartStatus()
                     self.saveUserRoute()
                     self.isUpdating = true
@@ -148,10 +147,7 @@ extension PathController: MKMapViewDelegate {
         renderer.lineWidth = 2
         return renderer
     }
-}
-
-//MARK: Map view functions
-extension PathController: CLLocationManagerDelegate {
+    
     //Custom pins use
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let latitude = annotation.coordinate.latitude
@@ -181,7 +177,10 @@ extension PathController: CLLocationManagerDelegate {
         
         return annotationView
     }
-    
+}
+
+//MARK: Map view functions
+extension PathController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = manager.location?.coordinate else { return }
         if self.origin == nil {

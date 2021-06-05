@@ -131,6 +131,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.1764705882" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="vqT-m9-6bD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="xFb-8Y-bRN"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="kc2-Su-6KA">
                                         <rect key="frame" x="0.0" y="219.5" width="414" height="65"/>
@@ -324,6 +327,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9Z-lU-3Wi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018.840579710145" y="-1306.4732142857142"/>
+        </scene>
+        <!--RoutesPageView-->
+        <scene sceneID="5rI-VR-pFy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RoutesPageView" id="vqT-m9-6bD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGp-9u-fO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556" y="-890"/>
         </scene>
         <!--Global Search Controller-->
         <scene sceneID="gBC-zJ-Ehi">

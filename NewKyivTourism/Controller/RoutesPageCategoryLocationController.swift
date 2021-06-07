@@ -20,7 +20,10 @@ class RoutesPageCategoryLocationController: UITableViewController {
         super.viewDidAppear(animated)
         userIsLoggedInCheck { (isLogged) in
             if isLogged {
-                self.favourites = self.likeTable.getFavourites(tableView: self.tableView)
+                self.likeTable.getFavourites { favs in
+                    self.favourites = favs
+                    self.tableView.reloadData()
+                }
             }
         }
     }

@@ -35,7 +35,10 @@ class PathController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard CLLocationManager.locationServicesEnabled() else {
+        if !(locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse)  {
+            self.loadLocationAlert(NSLocalizedString("Enable location service to continue", comment: "")) {
+                self.navigationController?.popViewController(animated: true)
+            }
             return
         }
         self.setupController()

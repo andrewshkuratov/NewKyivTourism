@@ -128,13 +128,13 @@ class RegistrationPageController: UIViewController {
         let bday = getBirthday()
         
         let info: ProfileModel = ProfileModel(name: userName,
-                                  surname: userSurname,
-                                  email: userEmail,
-                                  login: userLogin,
-                                  country: userCountry,
-                                  sex: userSex,
-                                  date: bday,
-                                  password: userPassword)
+                                              surname: userSurname,
+                                              email: userEmail,
+                                              login: userLogin,
+                                              country: userCountry,
+                                              sex: userSex,
+                                              date: bday,
+                                              password: userPassword)
         
         let data = try? JSONEncoder().encode(info)
         Network.CreateAccount(data: data!, userEmail: userEmail, userPassword: userPassword) { message in

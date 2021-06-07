@@ -164,6 +164,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.1764705882" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="YSX-Eu-cNB" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Xve-Op-xTd"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="k2I-Rz-90d">
                                         <rect key="frame" x="0.0" y="284.5" width="414" height="65"/>
@@ -348,6 +351,14 @@
             </objects>
             <point key="canvasLocation" x="1020" y="-751"/>
         </scene>
+        <!--LocationPageView-->
+        <scene sceneID="FYF-GY-hgb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LocationPageView" id="YSX-Eu-cNB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4L-LI-B7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053" y="-664"/>
+        </scene>
         <!--RegistrationPageView-->
         <scene sceneID="nKO-Ek-BMZ">
             <objects>
@@ -404,7 +415,7 @@
         <!--Main-->
         <scene sceneID="a3n-Z7-S3r">
             <objects>
-                <tableViewController id="LDt-9d-8Yc" customClass="MainPage" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainPage" id="LDt-9d-8Yc" customClass="MainPage" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rge-OA-peT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

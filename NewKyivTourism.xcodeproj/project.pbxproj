@@ -32,6 +32,8 @@
 		492194D8266562E800485BCA /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492194D7266562E800485BCA /* TableViewExtensions.swift */; };
 		492C650E26667A4C003C9F57 /* CommentsMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C650D26667A4C003C9F57 /* CommentsMapView.storyboard */; };
 		492C651026667C10003C9F57 /* CommentsMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C650F26667C10003C9F57 /* CommentsMapController.swift */; };
+		497EAE96266DE2560009C85C /* LocationPageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497EAE95266DE2560009C85C /* LocationPageView.storyboard */; };
+		497EAE98266DE2A80009C85C /* LocationPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EAE97266DE2A80009C85C /* LocationPageController.swift */; };
 		498AE89A2665F4D00003F0D4 /* MainPageLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498AE8992665F4D00003F0D4 /* MainPageLocationCell.xib */; };
 		498AE89C2665F54E0003F0D4 /* MainPageLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AE89B2665F54E0003F0D4 /* MainPageLocationCell.swift */; };
 		498AE89E2665F6800003F0D4 /* MainPageRouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498AE89D2665F6800003F0D4 /* MainPageRouteCell.xib */; };
@@ -67,6 +69,10 @@
 		4991A09426676DC7003DC125 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4991A09326676DC7003DC125 /* CommentCell.swift */; };
 		4991A09626676DF2003DC125 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4991A09526676DF2003DC125 /* DateExtension.swift */; };
 		4991A09826676FC3003DC125 /* CommentView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4991A09726676FC3003DC125 /* CommentView.storyboard */; };
+		49CD6A08266CB2D400C99DB5 /* ProfilePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD6A07266CB2D400C99DB5 /* ProfilePageController.swift */; };
+		49CD6A0A266CB49000C99DB5 /* EditProfilePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD6A09266CB49000C99DB5 /* EditProfilePageController.swift */; };
+		49CD6A0C266CB55E00C99DB5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD6A0B266CB55E00C99DB5 /* ImagePicker.swift */; };
+		49CD6A0E266CB60000C99DB5 /* AchievementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD6A0D266CB60000C99DB5 /* AchievementsCell.swift */; };
 		49E111AA2664E453006BBC75 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E111A92664E453006BBC75 /* ViewControllerExtension.swift */; };
 		49E111AC2664E52F006BBC75 /* LocationManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E111AB2664E52F006BBC75 /* LocationManagerExtensions.swift */; };
 		49E111AE2664E5BE006BBC75 /* MapSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E111AD2664E5BE006BBC75 /* MapSupport.swift */; };
@@ -110,6 +116,8 @@
 		492194D7266562E800485BCA /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
 		492C650D26667A4C003C9F57 /* CommentsMapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommentsMapView.storyboard; sourceTree = "<group>"; };
 		492C650F26667C10003C9F57 /* CommentsMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsMapController.swift; sourceTree = "<group>"; };
+		497EAE95266DE2560009C85C /* LocationPageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationPageView.storyboard; sourceTree = "<group>"; };
+		497EAE97266DE2A80009C85C /* LocationPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPageController.swift; sourceTree = "<group>"; };
 		498AE8992665F4D00003F0D4 /* MainPageLocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageLocationCell.xib; sourceTree = "<group>"; };
 		498AE89B2665F54E0003F0D4 /* MainPageLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageLocationCell.swift; sourceTree = "<group>"; };
 		498AE89D2665F6800003F0D4 /* MainPageRouteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageRouteCell.xib; sourceTree = "<group>"; };
@@ -149,6 +157,10 @@
 		4991A09326676DC7003DC125 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		4991A09526676DF2003DC125 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		4991A09726676FC3003DC125 /* CommentView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommentView.storyboard; sourceTree = "<group>"; };
+		49CD6A07266CB2D400C99DB5 /* ProfilePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageController.swift; sourceTree = "<group>"; };
+		49CD6A09266CB49000C99DB5 /* EditProfilePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePageController.swift; sourceTree = "<group>"; };
+		49CD6A0B266CB55E00C99DB5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		49CD6A0D266CB60000C99DB5 /* AchievementsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsCell.swift; sourceTree = "<group>"; };
 		49E111A92664E453006BBC75 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		49E111AB2664E52F006BBC75 /* LocationManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerExtensions.swift; sourceTree = "<group>"; };
 		49E111AD2664E5BE006BBC75 /* MapSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSupport.swift; sourceTree = "<group>"; };
@@ -200,6 +212,7 @@
 				490107112668F2290068E7BF /* RoutesPageUserPathCell.swift */,
 				4991A09326676DC7003DC125 /* CommentCell.swift */,
 				490107192668F6310068E7BF /* RoutesPageCategoryCell.swift */,
+				49CD6A0D266CB60000C99DB5 /* AchievementsCell.swift */,
 			);
 			path = TableCellModels;
 			sourceTree = "<group>";
@@ -263,6 +276,7 @@
 				490107052668EA330068E7BF /* RoutesPageView.storyboard */,
 				49E5E206266B46B6009857E9 /* RegistrationPageView.storyboard */,
 				49E5E208266B46D0009857E9 /* ProfilePageView.storyboard */,
+				497EAE95266DE2560009C85C /* LocationPageView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +300,9 @@
 				4901071B2668F7140068E7BF /* RoutesPageCategoryLocationController.swift */,
 				49E5E20A266B57BD009857E9 /* AuthorizationPageController.swift */,
 				49E5E20E266B5BA4009857E9 /* RegistrationPageController.swift */,
+				49CD6A07266CB2D400C99DB5 /* ProfilePageController.swift */,
+				49CD6A09266CB49000C99DB5 /* EditProfilePageController.swift */,
+				497EAE97266DE2A80009C85C /* LocationPageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,6 +360,7 @@
 				49E111AD2664E5BE006BBC75 /* MapSupport.swift */,
 				492194D326655B3200485BCA /* LikeTable.swift */,
 				491B05EA2667A23700ACB2DF /* LikeButton.swift */,
+				49CD6A0B266CB55E00C99DB5 /* ImagePicker.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -441,6 +459,7 @@
 				498AE89E2665F6800003F0D4 /* MainPageRouteCell.xib in Resources */,
 				492C650E26667A4C003C9F57 /* CommentsMapView.storyboard in Resources */,
 				4991A09226676D8D003DC125 /* CommentCell.xib in Resources */,
+				497EAE96266DE2560009C85C /* LocationPageView.storyboard in Resources */,
 				4901070C2668F06D0068E7BF /* RoutesPageRouteCell.xib in Resources */,
 				498AE89A2665F4D00003F0D4 /* MainPageLocationCell.xib in Resources */,
 				490107182668F6130068E7BF /* RoutesPageCategoryCell.xib in Resources */,
@@ -521,8 +540,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497EAE98266DE2A80009C85C /* LocationPageController.swift in Sources */,
 				498E83322663C6FD00EDD5F3 /* TimerView.swift in Sources */,
 				498E83342663C83B00EDD5F3 /* AchievementsServer.swift in Sources */,
+				49CD6A0A266CB49000C99DB5 /* EditProfilePageController.swift in Sources */,
 				4901070E2668F0AF0068E7BF /* RoutesPageRouteCell.swift in Sources */,
 				49E111AA2664E453006BBC75 /* ViewControllerExtension.swift in Sources */,
 				490107142668F30D0068E7BF /* RoutesPageUserPathController.swift in Sources */,
@@ -543,6 +564,7 @@
 				498E83362663C9D800EDD5F3 /* PathController.swift in Sources */,
 				49E111AE2664E5BE006BBC75 /* MapSupport.swift in Sources */,
 				49E431A32668B1F100ED86ED /* NoCommentsMapController.swift in Sources */,
+				49CD6A0E266CB60000C99DB5 /* AchievementsCell.swift in Sources */,
 				498E82F92663B9E800EDD5F3 /* MainPage.swift in Sources */,
 				49E431AB2668B83B00ED86ED /* PosterDetailController.swift in Sources */,
 				492194D8266562E800485BCA /* TableViewExtensions.swift in Sources */,
@@ -560,10 +582,12 @@
 				4901070A2668EF340068E7BF /* RoutesPageRouteController.swift in Sources */,
 				498E832F2663C5B900EDD5F3 /* Network.swift in Sources */,
 				492194CE266554D900485BCA /* ViewExtensions.swift in Sources */,
+				49CD6A08266CB2D400C99DB5 /* ProfilePageController.swift in Sources */,
 				498E83232663BEAC00EDD5F3 /* RouteModel.swift in Sources */,
 				498E83212663BE6900EDD5F3 /* PosterModel.swift in Sources */,
 				492194D426655B3200485BCA /* LikeTable.swift in Sources */,
 				490107122668F2290068E7BF /* RoutesPageUserPathCell.swift in Sources */,
+				49CD6A0C266CB55E00C99DB5 /* ImagePicker.swift in Sources */,
 				492194D62665624500485BCA /* GlobalSearchController.swift in Sources */,
 				490107162668F4DB0068E7BF /* RoutesPageCategoryController.swift in Sources */,
 				498AE8AA266607970003F0D4 /* PaddingLabel.swift in Sources */,

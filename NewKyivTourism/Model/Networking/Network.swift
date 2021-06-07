@@ -50,6 +50,7 @@ class Network {
         let body = SocialNetworkModel(provider: "facebook", access_token: token)
         let data = try! JSONEncoder().encode(body)
         Client.Router(endpoint: .facebook, data: data, header: nil) { (response) in
+            print(response.debugDescription)
             if let data = response.data {
                 saveTokens(data) ? completion(nil) : completion(error)
             } else {
@@ -106,6 +107,30 @@ class Network {
             } catch {
                 completion(error.localizedDescription)
             }
+        }
+    }
+    
+    class func UpdateProfile(_ data: Data) {
+        let header = getHeader()
+        Client.Router(endpoint: .update, data: data, header: header) { (response) in
+//            print(response.debugDescription)
+        }
+    }
+    
+    //MARK: Update user Avatar
+    class func UpdateAvatar(_ image: UIImage, _ login: String) {
+        let url =  URL(string: Constants.Network.baseURL + "/api/user/update")
+        let imgData = image.jpegData(compressionQuality: 1)!
+        
+        var header = getHeader()
+        header.add(HTTPHeader(name: "Content-Type", value: "multipart/form-data"))
+
+        AF.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(imgData, withName: "avatar", fileName: "avatar-\(login).jpeg", mimeType: "image/jpeg")
+                print(multipartFormData)
+            }, to: url!, method: .post, headers: header).response { resp in
+                print(resp.debugDescription)
         }
     }
     

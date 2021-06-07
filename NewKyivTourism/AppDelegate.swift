@@ -55,18 +55,17 @@ extension AppDelegate: GIDSignInDelegate {
             }
             return
         }
-//        let vc = signIn.presentingViewController as! RegistrationForm
+        let vc = signIn.presentingViewController as! AuthorizationPageController
         let accessToken = user.authentication.accessToken
-        print(user)
-//        vc.createSpinnerView {
-//            Network.GoogleAuth(accessToken!) { (message) in
-//                if let message = message {
-//                    vc.invokeAlert(message: message)
-//                } else {
-//                    vc.performSegue(withIdentifier: "goToMain", sender: vc)
-//                }
-//            }
-//        }
+        vc.createSpinnerView {
+            Network.GoogleAuth(accessToken!) { (message) in
+                if let message = message {
+                    vc.invokeAlert(message: message)
+                } else {
+                    vc.performSegue(withIdentifier: "goToMain", sender: vc)
+                }
+            }
+        }
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {

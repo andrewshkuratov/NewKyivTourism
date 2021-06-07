@@ -12,33 +12,17 @@ import FBSDKCoreKit
 import GoogleSignIn
 
 class LikeTable {
-    func getFavourites(tableView: UITableView) -> Array<LocationModel> {
+    public func getFavourites(completion: @escaping(_ favourites: Array<LocationModel>) -> Void) {
         var favourites: Array<LocationModel> = []
         Network.sendRequest(endpoint: .favourites, data: nil, type: LocationResponse.self) { result in
             switch result {
             case .success(let response):
                 favourites  = response.data
-                tableView.reloadData()
+                completion(favourites)
                 break
             case .failure(_):
                 break
             }
         }
-        return favourites
-    }
-    
-    func getFavourites(collectionView: UICollectionView) -> Array<LocationModel> {
-        var favourites: Array<LocationModel> = []
-        Network.sendRequest(endpoint: .favourites, data: nil, type: LocationResponse.self) { result in
-            switch result {
-            case .success(let response):
-                favourites  = response.data
-                collectionView.reloadData()
-                break
-            case .failure(_):
-                break
-            }
-        }
-        return favourites
     }
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NDz-J4-sMp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Locations-->
+        <scene sceneID="vaC-gx-7RN">
+            <objects>
+                <tableViewController id="pWj-bS-0QT" customClass="LocationPageController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IsE-qX-yii">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="18F-dH-X5m">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FJ-11-aXC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Wsb-SH-mhx"/>
+                                    </constraints>
+                                    <state key="normal" title="Filter data" image="filter">
+                                        <color key="titleColor" name="AccentColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sortLocations:" destination="pWj-bS-0QT" eventType="touchUpInside" id="tYG-ek-eIx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="6FJ-11-aXC" firstAttribute="top" secondItem="18F-dH-X5m" secondAttribute="top" id="Ag7-xV-83S"/>
+                                <constraint firstItem="6FJ-11-aXC" firstAttribute="leading" secondItem="18F-dH-X5m" secondAttribute="leading" id="Rcc-IX-pJN"/>
+                                <constraint firstAttribute="bottom" secondItem="6FJ-11-aXC" secondAttribute="bottom" id="S3u-EO-LgV"/>
+                                <constraint firstAttribute="trailing" secondItem="6FJ-11-aXC" secondAttribute="trailing" id="wjf-oP-qon"/>
+                            </constraints>
+                        </view>
+                        <connections>
+                            <outlet property="dataSource" destination="pWj-bS-0QT" id="ccn-5d-pNB"/>
+                            <outlet property="delegate" destination="pWj-bS-0QT" id="Tea-nu-JAA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Locations" id="vLt-yD-T4f">
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="c8x-9C-iTU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBarButton" destination="c8x-9C-iTU" id="q9M-2R-Puf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZ7-dF-wQy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.39999999999998" y="26.600985221674879"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wNg-zl-O7F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NDz-J4-sMp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FTT-Ht-4hu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pWj-bS-0QT" kind="relationship" relationship="rootViewController" id="AYT-hf-TmV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcO-xz-BQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="26.600985221674879"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="25" height="25"/>
+        <image name="filter" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

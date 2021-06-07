@@ -9,6 +9,7 @@ import UIKit
 import InfiniteCarouselCollectionView
 import CoreLocation
 import FaveButton
+import GoogleSignIn
 
 class MainPage: UITableViewController {
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
@@ -24,7 +25,6 @@ class MainPage: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.setMenu(menuBarButton)
         requestLocation()
         setupCarousel()
@@ -36,7 +36,10 @@ class MainPage: UITableViewController {
         super.viewDidAppear(animated)
         userIsLoggedInCheck { (isLogged) in
             if isLogged {
-                self.favourites = self.likeTable.getFavourites(tableView: self.tableView)
+                self.likeTable.getFavourites { favs in
+                    self.favourites = favs
+                    self.tableView.reloadData()
+                }
             }
         }
     }

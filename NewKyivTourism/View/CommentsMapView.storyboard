@@ -11,7 +11,7 @@
         <!--Comments Map Controller-->
         <scene sceneID="8Ku-di-1uv">
             <objects>
-                <viewController storyboardIdentifier="CommentsMapView" id="Pyp-Ij-xWX" customClass="CommentsMapController" customModule="KyivTourismApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommentsMapView" id="Pyp-Ij-xWX" customClass="CommentsMapController" customModule="NewKyivTourism" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1K-O9-DaK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-vf-Vp0">
-                                <rect key="frame" x="20" y="762" width="374" height="50"/>
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAq-Y8-Mzc">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
@@ -73,7 +73,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XoU-U7-v7m" firstAttribute="trailing" secondItem="hH4-LT-WDk" secondAttribute="trailing" id="0ts-Uv-9YP"/>
-                            <constraint firstItem="XoU-U7-v7m" firstAttribute="bottom" secondItem="RcX-vf-Vp0" secondAttribute="bottom" constant="50" id="84s-HI-dVK"/>
+                            <constraint firstItem="XoU-U7-v7m" firstAttribute="bottom" secondItem="RcX-vf-Vp0" secondAttribute="bottom" constant="20" id="84s-HI-dVK"/>
                             <constraint firstItem="we6-oc-0wO" firstAttribute="top" secondItem="XoU-U7-v7m" secondAttribute="top" constant="10" id="Bvh-AI-3SW"/>
                             <constraint firstItem="RcX-vf-Vp0" firstAttribute="leading" secondItem="XoU-U7-v7m" secondAttribute="leading" constant="20" id="VXH-79-jig"/>
                             <constraint firstItem="we6-oc-0wO" firstAttribute="leading" secondItem="XoU-U7-v7m" secondAttribute="leading" constant="20" id="ae7-FS-hYh"/>

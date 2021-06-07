@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-Ee-B4m">
-                                <rect key="frame" x="20" y="762" width="374" height="50"/>
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMY-mi-Qz3">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -73,7 +73,7 @@
                             <constraint firstItem="n7B-21-bV8" firstAttribute="top" secondItem="uSy-dF-SdB" secondAttribute="bottom" constant="10" id="ocv-Sb-blT"/>
                             <constraint firstItem="ZRp-dJ-nPU" firstAttribute="top" secondItem="jQR-66-qv0" secondAttribute="top" id="qlL-qx-134"/>
                             <constraint firstItem="uSy-dF-SdB" firstAttribute="top" secondItem="jQR-66-qv0" secondAttribute="top" constant="10" id="rkr-fP-AFI"/>
-                            <constraint firstItem="jQR-66-qv0" firstAttribute="bottom" secondItem="CuA-Ee-B4m" secondAttribute="bottom" constant="50" id="vBY-Ra-2Ol"/>
+                            <constraint firstItem="jQR-66-qv0" firstAttribute="bottom" secondItem="CuA-Ee-B4m" secondAttribute="bottom" constant="20" id="vBY-Ra-2Ol"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MnA-Z3-gC1"/>

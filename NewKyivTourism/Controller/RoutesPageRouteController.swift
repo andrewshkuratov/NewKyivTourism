@@ -12,10 +12,8 @@ import CoreLocation
 class RoutesPageRouteController: UITableViewController {
     var routes: Array<RouteModel> = []
     
-    let sortingOptions = [NSLocalizedString("By name", comment: ""),
+    var sortingOptions = [NSLocalizedString("By name", comment: ""),
                           NSLocalizedString("By name(decrease)", comment: ""),
-                          NSLocalizedString("The nearest start of the route", comment: ""),
-                          NSLocalizedString("The farthest start of the route", comment: ""),
                           NSLocalizedString("Most locations", comment: ""),
                           NSLocalizedString("Least locations", comment: ""),
                           NSLocalizedString("By rating", comment: ""),
@@ -74,21 +72,21 @@ extension RoutesPageRouteController {
             } else if item == self!.sortingOptions[1] {
                 self!.sortByNameReverse()
             } else if item == self!.sortingOptions[2] {
-                self!.sortByNearest()
-            } else if item == self!.sortingOptions[3] {
-                self!.sortByFarest()
-            } else if item == self!.sortingOptions[4] {
                 self!.sortByNumberOfLocations()
-            } else if item == self!.sortingOptions[5] {
+            } else if item == self!.sortingOptions[3] {
                 self!.sortByNumberOfLocationsReverse()
-            } else if item == self!.sortingOptions[6] {
+            } else if item == self!.sortingOptions[4] {
                 self!.sortByRating()
-            } else if item == self!.sortingOptions[7] {
+            } else if item == self!.sortingOptions[5] {
                 self!.sortByRatingDecrease()
-            } else if item == self!.sortingOptions[8] {
+            } else if item == self!.sortingOptions[6] {
                 self!.sortByLengtth()
-            } else if item == self!.sortingOptions[9] {
+            } else if item == self!.sortingOptions[7] {
                 self!.sortByLengtthDecrease()
+            } else if item == self!.sortingOptions[8] {
+                self!.sortByNearest()
+            } else if item == self!.sortingOptions[9] {
+                self!.sortByFarest()
             }
         }
     }
@@ -186,6 +184,10 @@ extension RoutesPageRouteController: CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+        if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
+            sortingOptions.append(NSLocalizedString("The nearest start of the route", comment: ""))
+            sortingOptions.append(NSLocalizedString("The farthest start of the route", comment: ""))
+        }
     }
         
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

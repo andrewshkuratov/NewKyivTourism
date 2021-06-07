@@ -96,7 +96,7 @@ extension AuthorizationPageController {
             return
         }
         
-        guard let pass = password.text, !pass.isEmpty, pass.count > 8 else {
+        guard let pass = password.text, !pass.isEmpty, pass.count >= 8 else {
             if password.text!.isEmpty {
                 showPasswordError(message: NSLocalizedString("Input your password", comment: ""))
             } else if password.text!.count < 8 {

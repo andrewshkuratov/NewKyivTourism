@@ -46,26 +46,34 @@ extension UIViewController {
         self.present(alert, animated: true)
     }
     
+    func loadLocationAlert(_ message: String, completion: @escaping() -> Void) {
+        let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: { (alert) in
+            completion()
+        }))
+        self.present(alert, animated: true)
+    }
+    
     func registrationAlert(_ message: String) {
         let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: nil))
         self.present(alert, animated: true)
     }
     
-//    func notLoggedInAlert() {
-//        let dialogMessage = UIAlertController(title: NSLocalizedString("Error", comment: ""),
-//                                              message: NSLocalizedString("You are not entered yout account", comment: ""),
-//                                              preferredStyle: .alert)
-//        let register = UIAlertAction(title: NSLocalizedString("Enter", comment: ""), style: .default) { (action) in
-//            let storyboard = UIStoryboard(name: "Registration", bundle: .none)
-//            let nextVC = storyboard.instantiateViewController(identifier: "registrationForm") as! RegistrationForm
-//            self.navigationController?.pushViewController(nextVC, animated: true)
-//        }
-//        let ok = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: nil)
-//        dialogMessage.addAction(register)
-//        dialogMessage.addAction(ok)
-//        self.present(dialogMessage, animated: true, completion: nil)
-//    }
+    func notLoggedInAlert() {
+        let dialogMessage = UIAlertController(title: NSLocalizedString("Error", comment: ""),
+                                              message: NSLocalizedString("You are not entered yout account", comment: ""),
+                                              preferredStyle: .alert)
+        let register = UIAlertAction(title: NSLocalizedString("Enter", comment: ""), style: .default) { (action) in
+            let storyboard = UIStoryboard(name: "Registration", bundle: .none)
+            let nextVC = storyboard.instantiateViewController(identifier: "registrationForm") as! RegistrationPageController
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }
+        let ok = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .default, handler: nil)
+        dialogMessage.addAction(register)
+        dialogMessage.addAction(ok)
+        self.present(dialogMessage, animated: true, completion: nil)
+    }
     
     func ratingAlert(_ id: Int, _ path: String, title: String) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)

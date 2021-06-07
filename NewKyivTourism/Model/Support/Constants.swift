@@ -82,7 +82,7 @@ struct Constants {
         
         static let categoryCell = "RoutesPageCategoryCell"
         static let commentCell = "CommentCell"
-        static let buildPathCell = "UserBuildPathCell"
+        static let buildPathCell = "RoutesPageUserPathCell"
     }
     
     struct Path {

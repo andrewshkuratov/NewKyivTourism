@@ -37,7 +37,7 @@ extension LocationDetailController {
             commentsButton.roundView()
             mapButton.roundView()
             locationImage.roundCorner()
-                        
+            
             categoryLabel.text = info.category?.title
             locationTitle.text = info.title
             content.text = info.content?.htmlToString
@@ -87,24 +87,23 @@ extension LocationDetailController {
     }
     
     
-    @IBAction func likeAction(_ sender: FaveButton) {
-        print("Worked")
-        userIsLoggedInCheck { (isLogged) in
-            if isLogged {
-                if sender.isSelected {
-                    let dict = ["place_id" : "\(sender.tag)"]
-                    let data = try! JSONEncoder().encode(dict)
-                    Network.SendLike(data)
-                } else {
-                    let dict = ["place_id" : "\(sender.tag)"]
-                    let data = try! JSONEncoder().encode(dict)
-                    Network.SendDislike(data)
-                }
-            } else {
-                sender.setSelected(selected: false, animated: false)
-            }
-        }
-    }
+//    @IBAction func likeAction(_ sender: FaveButton) {
+//        userIsLoggedInCheck { (isLogged) in
+//            if isLogged {
+//                if sender.isSelected {
+//                    let dict = ["place_id" : "\(sender.tag)"]
+//                    let data = try! JSONEncoder().encode(dict)
+//                    Network.SendLike(data)
+//                } else {
+//                    let dict = ["place_id" : "\(sender.tag)"]
+//                    let data = try! JSONEncoder().encode(dict)
+//                    Network.SendDislike(data)
+//                }
+//            } else {
+//                sender.setSelected(selected: false, animated: false)
+//            }
+//        }
+//    }
     
     @IBAction func showMap(_ sender: Any) {
         guard let loc = locationInfo else {

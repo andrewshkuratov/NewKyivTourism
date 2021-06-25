@@ -201,6 +201,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.1764705882" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="ZEC-m3-pcF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="VNS-00-KdO"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="FG4-g9-Pb8">
                                         <rect key="frame" x="0.0" y="349.5" width="414" height="65"/>
@@ -287,6 +290,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.1764705882" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="rD3-PG-99C" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="737-Fb-QCe"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="a1a-aE-pGO">
                                         <rect key="frame" x="0.0" y="544.5" width="414" height="65"/>
@@ -341,7 +347,15 @@
                 <viewControllerPlaceholder storyboardName="RoutesPageView" id="vqT-m9-6bD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGp-9u-fO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556" y="-890"/>
+            <point key="canvasLocation" x="1020" y="-732"/>
+        </scene>
+        <!--PosterPageView-->
+        <scene sceneID="dae-tt-IH5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PosterPageView" id="ZEC-m3-pcF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbR-uq-ob6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-639"/>
         </scene>
         <!--ProfilePageView-->
         <scene sceneID="2jf-hY-UJm">
@@ -349,7 +363,7 @@
                 <viewControllerPlaceholder storyboardName="ProfilePageView" id="mk9-zX-vCK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7S-RP-wjC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-751"/>
+            <point key="canvasLocation" x="1020" y="-475"/>
         </scene>
         <!--LocationPageView-->
         <scene sceneID="FYF-GY-hgb">
@@ -357,7 +371,7 @@
                 <viewControllerPlaceholder storyboardName="LocationPageView" id="YSX-Eu-cNB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4L-LI-B7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053" y="-664"/>
+            <point key="canvasLocation" x="1020" y="-680"/>
         </scene>
         <!--RegistrationPageView-->
         <scene sceneID="nKO-Ek-BMZ">
@@ -365,7 +379,15 @@
                 <viewControllerPlaceholder storyboardName="RegistrationPageView" id="5ll-cc-krm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqw-ZD-1SZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-824"/>
+            <point key="canvasLocation" x="1020" y="-526"/>
+        </scene>
+        <!--SettingsPageView-->
+        <scene sceneID="LqA-EQ-8oj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsPageView" id="rD3-PG-99C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhc-bP-66H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-579"/>
         </scene>
         <!--Global Search Controller-->
         <scene sceneID="gBC-zJ-Ehi">

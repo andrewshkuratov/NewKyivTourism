@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Change App Language"; ObjectID = "9AS-D2-amM"; */
+"9AS-D2-amM.normalTitle" = "Змінити мову додатку";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "B33-Of-BLx"; */
+"B33-Of-BLx.title" = "Налаштування";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "avI-c4-ASX"; */
+"avI-c4-ASX.title" = "Item";

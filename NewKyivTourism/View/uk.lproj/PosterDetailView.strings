@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7nq-8D-Wgs"; */
+"7nq-8D-Wgs.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BVg-Hh-P3p"; */
+"BVg-Hh-P3p.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Comments"; ObjectID = "DFY-PG-ghS"; */
+"DFY-PG-ghS.normalTitle" = "Комментарі";
+
+/* Class = "UIButton"; normalTitle = "On Map"; ObjectID = "ce9-2l-dU9"; */
+"ce9-2l-dU9.normalTitle" = "На мапі";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hLX-LZ-Oxk"; */
+"hLX-LZ-Oxk.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sP6-Il-yWM"; */
+"sP6-Il-yWM.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "w4y-m4-5dX"; */
+"w4y-m4-5dX.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xXU-XQ-4Qg"; */
+"xXU-XQ-4Qg.text" = "Label";

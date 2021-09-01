@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "Country :"; ObjectID = "2Jf-tM-DcL"; */
+"2Jf-tM-DcL.text" = "Країна :";
+
+/* Class = "UILabel"; text = "Surname"; ObjectID = "2WW-z0-NhO"; */
+"2WW-z0-NhO.text" = "Прізвище";
+
+/* Class = "UILabel"; text = "General information"; ObjectID = "7oE-by-9Aq"; */
+"7oE-by-9Aq.text" = "Загальна інформація";
+
+/* Class = "UILabel"; text = "Last route"; ObjectID = "BCI-iG-eUT"; */
+"BCI-iG-eUT.text" = "Останній маршрут";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "CBy-R5-GED"; */
+"CBy-R5-GED.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Change profile"; ObjectID = "CMo-ug-NWA"; */
+"CMo-ug-NWA.normalTitle" = "Змінити профіль";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "DSV-uu-4ma"; */
+"DSV-uu-4ma.text" = "Ім'я";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "E14-wC-WQc"; */
+"E14-wC-WQc.title" = "Item";
+
+/* Class = "UILabel"; text = "Location 1 - Location 2 - Location 3"; ObjectID = "ERQ-2R-PqA"; */
+"ERQ-2R-PqA.text" = "Локація 1 - Локація 2 - Локація 3";
+
+/* Class = "UILabel"; text = "About :"; ObjectID = "G1W-ej-dfa"; */
+"G1W-ej-dfa.text" = "Інфо :";
+
+/* Class = "UILabel"; text = "Achievements"; ObjectID = "I35-ho-yq6"; */
+"I35-ho-yq6.text" = "Досягнення";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LIK-KZ-8it"; */
+"LIK-KZ-8it.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LtM-ZF-uPg"; */
+"LtM-ZF-uPg.text" = "Label";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "T07-2i-cR7"; */
+"T07-2i-cR7.text" = "About";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UZX-C8-Ous"; */
+"UZX-C8-Ous.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Change Photo"; ObjectID = "VAr-XS-6uV"; */
+"VAr-XS-6uV.normalTitle" = "Змінити фото";
+
+/* Class = "UILabel"; text = "Birthday"; ObjectID = "XEX-zS-ctn"; */
+"XEX-zS-ctn.text" = "День народження";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YpI-Kx-cT9"; */
+"YpI-Kx-cT9.text" = "Label";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "aTL-6b-p2l"; */
+"aTL-6b-p2l.text" = "Країна";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "c0y-ix-MmY"; */
+"c0y-ix-MmY.text" = "Профіль";
+
+/* Class = "UIButton"; normalTitle = "See more"; ObjectID = "c5i-fL-g2F"; */
+"c5i-fL-g2F.normalTitle" = "Побачити більше";
+
+/* Class = "UITextField"; placeholder = "Про себе"; ObjectID = "fZB-mV-X8h"; */
+"fZB-mV-X8h.placeholder" = "Про себе";
+
+/* Class = "UILabel"; text = "User Login"; ObjectID = "k99-aU-2ox"; */
+"k99-aU-2ox.text" = "Користувацький логін";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "m2U-aK-a7m"; */
+"m2U-aK-a7m.text" = "Інфо";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "mdL-4R-EPa"; */
+"mdL-4R-EPa.title" = "Item";
+
+/* Class = "UILabel"; text = "Прізвище ім'я"; ObjectID = "nau-Mp-hYX"; */
+"nau-Mp-hYX.text" = "Прізвище ім'я";
+
+/* Class = "UILabel"; text = "Birthday :"; ObjectID = "pnt-Pu-HhQ"; */
+"pnt-Pu-HhQ.text" = "День народження :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tZq-Im-11l"; */
+"tZq-Im-11l.text" = "Label";
+
+/* Class = "UILabel"; text = "11 November 2020"; ObjectID = "xAS-Ft-yO1"; */
+"xAS-Ft-yO1.text" = "11 Листопада 2020";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "xdK-IZ-bBx"; */
+"xdK-IZ-bBx.title" = "Профіль";

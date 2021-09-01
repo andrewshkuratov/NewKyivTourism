@@ -87,23 +87,24 @@ extension LocationDetailController {
     }
     
     
-//    @IBAction func likeAction(_ sender: FaveButton) {
-//        userIsLoggedInCheck { (isLogged) in
-//            if isLogged {
-//                if sender.isSelected {
-//                    let dict = ["place_id" : "\(sender.tag)"]
-//                    let data = try! JSONEncoder().encode(dict)
-//                    Network.SendLike(data)
-//                } else {
-//                    let dict = ["place_id" : "\(sender.tag)"]
-//                    let data = try! JSONEncoder().encode(dict)
-//                    Network.SendDislike(data)
-//                }
-//            } else {
-//                sender.setSelected(selected: false, animated: false)
-//            }
-//        }
-//    }
+    @IBAction func likeAction(_ sender: FaveButton) {
+        userIsLoggedInCheck { (isLogged) in
+            if isLogged {
+                if sender.isSelected {
+                    let dict = ["place_id" : "\(sender.tag)"]
+                    let data = try! JSONEncoder().encode(dict)
+                    Network.SendLike(data)
+                } else {
+                    let dict = ["place_id" : "\(sender.tag)"]
+                    let data = try! JSONEncoder().encode(dict)
+                    Network.SendDislike(data)
+                }
+            } else {
+                self.notLoggedInAlert()
+                sender.setSelected(selected: false, animated: false)
+            }
+        }
+    }
     
     @IBAction func showMap(_ sender: Any) {
         guard let loc = locationInfo else {
@@ -124,9 +125,7 @@ extension LocationDetailController {
             if isLogged {
                 self.ratingAlert(self.locationInfo!.id, Constants.Path.location, title: NSLocalizedString("Please, rate this location",comment: ""))
             } else {
-                self.loadAlert("You are not logged in") {
-                    
-                }
+                self.notLoggedInAlert()
             }
         }
     }

@@ -116,6 +116,7 @@ extension MainPage {
                     }
                 }
             } else {
+                self.notLoggedInAlert()
                 sender.setSelected(selected: false, animated: false)
             }
         }

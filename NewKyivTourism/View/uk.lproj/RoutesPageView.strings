@@ -1,0 +1,27 @@
+
+/* Class = "UITabBarItem"; title = "Route Build"; ObjectID = "4WE-VJ-fG9"; */
+"4WE-VJ-fG9.title" = "Побудова маршруту";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "84j-dH-xxn"; */
+"84j-dH-xxn.title" = "Мапа";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BFe-BP-IWp"; */
+"BFe-BP-IWp.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Sorting"; ObjectID = "JVx-vO-9HI"; */
+"JVx-vO-9HI.normalTitle" = "Сортувати";
+
+/* Class = "UIButton"; normalTitle = "Build a route"; ObjectID = "Nfg-J4-dy8"; */
+"Nfg-J4-dy8.normalTitle" = "Побудувати маршрут";
+
+/* Class = "UITabBarItem"; title = "Categories"; ObjectID = "bg2-iv-6Fi"; */
+"bg2-iv-6Fi.title" = "Категорії";
+
+/* Class = "UINavigationItem"; title = "Routes"; ObjectID = "c3z-e3-Uge"; */
+"c3z-e3-Uge.title" = "Маршрути";
+
+/* Class = "UITabBarItem"; title = "Routes"; ObjectID = "hk7-dF-7bK"; */
+"hk7-dF-7bK.title" = "Маршрути";
+
+/* Class = "UIButton"; normalTitle = "Filter data"; ObjectID = "mxD-9u-ujI"; */
+"mxD-9u-ujI.normalTitle" = "Відфільтрувати інформацію";

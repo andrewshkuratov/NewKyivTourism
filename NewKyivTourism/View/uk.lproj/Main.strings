@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "0MK-Vd-x5T"; */
+"0MK-Vd-x5T.text" = "Налаштування";
+
+/* Class = "UILabel"; text = "Main"; ObjectID = "2DU-Zg-hwU"; */
+"2DU-Zg-hwU.text" = "Головна";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "6jO-2m-Dom"; */
+"6jO-2m-Dom.text" = "Профіль";
+
+/* Class = "UILabel"; text = "Feedback"; ObjectID = "BIw-2S-vVu"; */
+"BIw-2S-vVu.text" = "Відгук";
+
+/* Class = "UILabel"; text = "Kyiv City Package"; ObjectID = "BTX-wq-chv"; */
+"BTX-wq-chv.text" = "Kyiv City Package";
+
+/* Class = "UILabel"; text = "Info"; ObjectID = "HgO-nU-bow"; */
+"HgO-nU-bow.text" = "Інформація";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Pno-YR-x11"; */
+"Pno-YR-x11.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Q3J-fk-oW1"; */
+"Q3J-fk-oW1.title" = "Item";
+
+/* Class = "UILabel"; text = "Routes"; ObjectID = "aaC-Jn-abh"; */
+"aaC-Jn-abh.text" = "Маршрути";
+
+/* Class = "UILabel"; text = "Show bill"; ObjectID = "cxQ-Vu-2yT"; */
+"cxQ-Vu-2yT.text" = "Постери";
+
+/* Class = "UINavigationItem"; title = "Main"; ObjectID = "ld8-7U-hqU"; */
+"ld8-7U-hqU.title" = "Головна";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "nJA-3X-f4i"; */
+"nJA-3X-f4i.text" = "Локації";

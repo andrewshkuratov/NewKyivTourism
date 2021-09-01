@@ -101,15 +101,19 @@ extension PathController {
                     self.saveUserRoute()
                     self.isUpdating = true
                 }
+            } else {
+                self.notLoggedInAlert()
             }
         }
     }
     
     @IBAction func changeDirection(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            mapSupport.buildPath(from: origin!, locations: locations, mapView: mapView, transport: .walking)
-        } else {
-            mapSupport.buildPath(from: origin!, locations: locations, mapView: mapView, transport: .automobile)
+        if let origin = self.origin {
+            if sender.selectedSegmentIndex == 0 {
+                mapSupport.buildPath(from: origin, locations: locations, mapView: mapView, transport: .walking)
+            } else {
+                mapSupport.buildPath(from: origin, locations: locations, mapView: mapView, transport: .automobile)
+            }
         }
     }
     

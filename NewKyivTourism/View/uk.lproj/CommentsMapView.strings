@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "00:00:00"; ObjectID = "bIq-rO-Qam"; */
+"bIq-rO-Qam.text" = "00:00:00";
+
+/* Class = "UIButton"; normalTitle = "Comments"; ObjectID = "jAq-Y8-Mzc"; */
+"jAq-Y8-Mzc.normalTitle" = "Комментарі";
+
+/* Class = "UIButton"; normalTitle = "Start Route"; ObjectID = "meJ-Qj-Fl5"; */
+"meJ-Qj-Fl5.normalTitle" = "Розпочати маршрут";

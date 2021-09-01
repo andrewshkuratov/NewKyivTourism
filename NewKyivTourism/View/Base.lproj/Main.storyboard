@@ -101,6 +101,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.1764705882" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="yPH-Lq-tTd" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="PId-0I-Vky"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="tZR-85-usB">
                                         <rect key="frame" x="0.0" y="154.5" width="414" height="65"/>
@@ -256,6 +259,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.1764705882" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="aYy-Yg-oQk" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="urM-3q-TjA"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="kML-DE-fmc">
                                         <rect key="frame" x="0.0" y="479.5" width="414" height="65"/>
@@ -341,6 +347,14 @@
             </objects>
             <point key="canvasLocation" x="1018.840579710145" y="-1306.4732142857142"/>
         </scene>
+        <!--FeedBack-->
+        <scene sceneID="aEL-dx-hPz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FeedBack" id="aYy-Yg-oQk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZc-I1-UlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="-605"/>
+        </scene>
         <!--RoutesPageView-->
         <scene sceneID="5rI-VR-pFy">
             <objects>
@@ -348,6 +362,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGp-9u-fO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1020" y="-732"/>
+        </scene>
+        <!--TourismInformation-->
+        <scene sceneID="ej5-zB-bcj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TourismInformation" id="yPH-Lq-tTd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVU-Se-Etg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="-760"/>
         </scene>
         <!--PosterPageView-->
         <scene sceneID="dae-tt-IH5">

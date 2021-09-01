@@ -1,0 +1,111 @@
+/* 
+  Ukrainian.strings
+  NewKyivTourism
+
+  Created by Andrew on 23.06.2021.
+  
+*/
+//-MARK: Main
+"Locations" = "Пам'ятки";
+"Show bill" = "Афіша";
+"Routes" = "Маршрути";
+"Input Location, Show Bill or Route" = "Введіть локацію, подію або маршрут";
+"Nothing found" = "Нічого не знайдено";
+
+//MARK: NetworkFunctions
+"Some error occured" = "Щось пішло не так";
+ 
+//MARK: -Alerts
+"Error" = "Помилка";
+"Try again" = "Спробувати ще";
+"Ok" = "Окей";
+"You are not entered yout account" = "Ви не увійшли до аккаунту";
+"Enter" = "Увійти";
+"LogIn to your account to send feedback" = "Увійдіть до аккаунту щоб залишити відгук";
+"Please, enter your message" = "Будь ласка, введіть повідомлення";
+
+"Awful" = "Жахливо";
+"Don't like" = "Не сподобалося";
+"Normal" = "Нормально";
+"Like" = "Сподобалося";
+"Very like" = "Дуже сподобалося";
+
+"Cancel" = "Скасувати";
+"Alert" = "Edfuf";
+
+//MARK: Profile
+"km" = "км";
+"min" = "ХВ";
+"Logout" = "Вийти";
+
+//MARK: Comment Controller
+"Empty field" = "Відсутнє повідомлення";
+
+//MARK: Comments Map Controller
+"Please, rate this route" = "Будь ласка, оцініть цей маршрут";
+"Start" = "Початок";
+"Stop" = "Кінець";
+
+//MARK: Location Detail Controller
+"Please, rate this location" = "Будь ласка, оцініть ця локацію";
+
+//MARK: Edit Profile Controller
+"Pick Country" = "Оберіть країну";
+"Invalid user name" = "Неправильне ім'я користувача";
+"Invalid user surname" = "Неправильне прізвище користувача";
+"Invalid user login" = "Неправильний логін";
+"Choose Country" = "Оберіть країну";
+
+//MARK: Image Picker
+"Take photo" = "Зробити фото";
+"Camera roll" = "Камера";
+"Photo library" = "Галерея";
+
+//MARK: Date extension
+"s" = "";
+"ago" = "тому";
+"second" = "с";
+"min" = "хв";
+"hour" = "год";
+"day" = "дн";
+"week" = "тижд";
+"month" = "міс";
+
+//MARK: Build User Location
+"Choose at least one location" = "Оберіть хоча б одну локацію";
+"Select" = "Обрати";
+
+//MARK: Routes
+"By name" = "За іменем";
+"By name(decrease)" = "За іменем(спадання)";
+"The nearest start of the route" = "Найближчий початок маршруту";
+"The farthest start of the route" = "Найвіддаленіший початок маршруту";
+"Most locations" = "Найбільше локацій";
+"Least locations" = "Найменша кількість локацій";
+"By rating" = "За рейтингом";
+"By rating(decrease)" = "За рейтингом(спадання)";
+"By length" = "За довжиною";
+"By length(decrease)" = "За довжиною(спадання)";
+
+//MARK: Main Poster Cell
+"Price" = "Ціна";
+"UAH" = "ГРН";
+
+//MARK: Poster detail controller
+"Learn more" = "Дізнатися більше";
+
+//MARK: Create account controller
+"Pick Country" = "Оберіть країну";
+"Invalid user name" = "Невірне ім'я користувача";
+"Invalid user surname" = "Невірне прізвище користувача";
+"Invalid user login" = "Невірний логін користувача";
+"Invalid user email" = "Невірна електронна адреса";
+"Invalid user password" = "Невірний пароль";
+
+//MARK: Location Controller
+"By nearest location" = "За найближчою локацією";
+"By farest location" = "За найвіддаленішою локацією";
+
+//MARK: Registration form
+"Input your email" = "Введіть вашу пошту";
+"Input your password" = "Введіть ваш пароль";

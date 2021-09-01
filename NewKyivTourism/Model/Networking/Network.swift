@@ -147,6 +147,15 @@ class Network {
         }
     }
     
+    class func Feedback(_ message: String) {
+        let d = ["user_message" : message]
+        let data = try! JSONEncoder().encode(d)
+        
+        Client.Router(endpoint: .feedback, data: data, header: getHeader()) { (response) in
+            print(response.debugDescription)
+        }
+    }
+    
     //MARK: Create Route/Location rating
     class func PostRating(_ type: String, _ locId: Int, _ rating: Int, completion: @escaping() -> Void) {
         let url = URL(string: Constants.Network.baseURL + "/api/\(type)/\(locId)/rate")

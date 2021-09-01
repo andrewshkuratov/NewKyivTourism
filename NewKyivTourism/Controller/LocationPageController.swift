@@ -111,6 +111,7 @@ class LocationPageController: UITableViewController {
                     }
                 }
             } else {
+                self.notLoggedInAlert()
                 sender.setSelected(selected: false, animated: false)
             }
         }

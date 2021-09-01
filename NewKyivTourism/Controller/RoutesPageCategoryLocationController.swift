@@ -97,6 +97,7 @@ extension RoutesPageCategoryLocationController {
                     }
                 }
             } else {
+                self.notLoggedInAlert()
                 sender.setSelected(selected: false, animated: false)
             }
         }

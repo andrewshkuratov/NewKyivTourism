@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2Hz-ZF-bud"; */
+"2Hz-ZF-bud.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3zg-6k-5pn"; */
+"3zg-6k-5pn.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "4FM-yT-TgP"; */
+"4FM-yT-TgP.normalTitle" = "Зареєструватися";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "65b-Ju-Lsm"; */
+"65b-Ju-Lsm.text" = "Країна";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "6n8-i2-W3a"; */
+"6n8-i2-W3a.text" = "Пошта";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7DB-i4-OTN"; */
+"7DB-i4-OTN.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "8l8-0E-gRN"; */
+"8l8-0E-gRN.normalTitle" = "Зареєструватися";
+
+/* Class = "UITextField"; placeholder = "User Login"; ObjectID = "9EC-oh-kP3"; */
+"9EC-oh-kP3.placeholder" = "Користувацький логін";
+
+/* Class = "UITextField"; placeholder = "Login"; ObjectID = "9N3-7d-FWH"; */
+"9N3-7d-FWH.placeholder" = "Логін";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "Apr-7U-u2b"; */
+"Apr-7U-u2b.text" = "Стать";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Azi-nb-mYL"; */
+"Azi-nb-mYL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "DCb-8j-M6r"; */
+"DCb-8j-M6r.text" = "Пароль";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KU8-l8-gQ2"; */
+"KU8-l8-gQ2.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NSZ-6Z-TsL"; */
+"NSZ-6Z-TsL.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "T1V-LI-kXT"; */
+"T1V-LI-kXT.title" = "Логін";
+
+/* Class = "UITextField"; placeholder = "First name"; ObjectID = "VfI-RF-uYI"; */
+"VfI-RF-uYI.placeholder" = "Ім'я";
+
+/* Class = "UILabel"; text = "User Login"; ObjectID = "XfX-JO-22h"; */
+"XfX-JO-22h.text" = "Користувацький логін";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "XpO-04-heF"; */
+"XpO-04-heF.normalTitle" = "Увійти";
+
+/* Class = "UISegmentedControl"; aK8-5Z-XU3.segmentTitles[0] = "Male"; ObjectID = "aK8-5Z-XU3"; */
+"aK8-5Z-XU3.segmentTitles[0]" = "Чоловік";
+
+/* Class = "UISegmentedControl"; aK8-5Z-XU3.segmentTitles[1] = "Female"; ObjectID = "aK8-5Z-XU3"; */
+"aK8-5Z-XU3.segmentTitles[1]" = "Жінка";
+
+/* Class = "UILabel"; text = "Surname"; ObjectID = "bqv-fu-Nwg"; */
+"bqv-fu-Nwg.text" = "Прізвище";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fy4-bf-7ZZ"; */
+"fy4-bf-7ZZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lt0-a0-NAZ"; */
+"lt0-a0-NAZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Birthday"; ObjectID = "po2-Eu-ody"; */
+"po2-Eu-ody.text" = "День народження";
+
+/* Class = "UITextField"; placeholder = "Surname"; ObjectID = "sFc-ug-CCx"; */
+"sFc-ug-CCx.placeholder" = "Прізвище";
+
+/* Class = "UILabel"; text = "First name"; ObjectID = "tMO-lg-yg9"; */
+"tMO-lg-yg9.text" = "Ім'я";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "vwb-tl-uJf"; */
+"vwb-tl-uJf.placeholder" = "Пароль";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "x2F-gQ-PLU"; */
+"x2F-gQ-PLU.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "xUx-XO-eA5"; */
+"xUx-XO-eA5.placeholder" = "Пошта";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "xmf-Rl-1Jy"; */
+"xmf-Rl-1Jy.placeholder" = "Пароль";

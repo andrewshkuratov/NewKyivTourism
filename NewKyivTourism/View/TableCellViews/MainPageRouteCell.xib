@@ -124,6 +124,7 @@
                     <constraint firstAttribute="bottom" secondItem="b4T-aU-m0c" secondAttribute="bottom" constant="10" id="vTt-8Y-W1S"/>
                 </constraints>
             </collectionViewCellContentView>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <size key="customSize" width="382" height="368"/>
             <connections>
                 <outlet property="contentsText" destination="zdg-cC-buG" id="59z-13-X3v"/>
@@ -142,6 +143,9 @@
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="someKyivChurch" width="730" height="487"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
